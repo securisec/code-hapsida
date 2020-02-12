@@ -1,0 +1,25 @@
+{
+    "name": "hapsida-securisec",
+    "displayName": "hapsida.securisec",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "scripts": {
+        "build": "vsce package"
+    },
+    "publisher": "securisec",
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Hapsida",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Hapsida-color-theme.json"
+            }
+        ]
+    }
+}
