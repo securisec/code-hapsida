@@ -2,17 +2,18 @@
 	"name": "Hapsida",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#020b19",
+		"editor.background": "#111111",
+		// "editor.background": "#0x20b19",
 		"editor.foreground": "#eeffff",
-		"quickInput.background": "#020b19",
+		"quickInput.background": "#111111",
 		"quickInput.foreground": "#eeffff",
 		
 		"editorOverviewRuler.findMatchForeground": "#ff00f2",
 		// panel
-		"panel.background": "#020b19",
+		"panel.background": "#111111",
 		"panel.border": "#0D3A58",
 		"panelTitle.activeBorder": "#ffe677",
-		"panelTitle.activeForeground": "#ffe677",
+		"panelTitle.activeForeground": "#0D3A58",
 		"panelTitle.inactiveForeground": "#6d8996",
 	
 		"editor.findMatchBackground": "#faf6e438",
@@ -26,13 +27,13 @@
 		// This section is for testing cobalt
 		//
 		// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L125-L135
-		"input.background": "#020b19", //search bar color
+		"input.background": "#111111", //search bar color
 		"input.border": "#0D3A58", //search bar border
 		"input.foreground": "#ffe677",
 		"input.placeholderForeground": "#aaa",
 		"inputOption.activeBorder": "#00ffd5",
 		"inputValidation.errorBackground": "#193549",
-		"inputValidation.errorBorder": "#ffc600",
+		"inputValidation.errorBorder": "#0D3A58",
 		"inputValidation.infoBackground": "#193549",
 		"inputValidation.infoBorder": "#0D3A58",
 		"inputValidation.warningBackground": "#193549",
@@ -53,7 +54,7 @@
 		"activityBarBadge.foreground": "#000",
 		"activityBarBadge.background": "#ffe677",
 		"activityBar.inactiveForeground": "#6f7683",
-		"activityBar.background": "#020b19",
+		"activityBar.background": "#111111",
 		// badge
 		// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L13-L15
 		"badge.background": "#ffc600",
@@ -84,7 +85,7 @@
 		"editor.inactiveSelectionBackground": "#193549",
 		// current line styles
 		"editor.lineHighlightBackground": "#000000",
-		"editor.lineHighlightBorder": "#00cec4a6",
+		"editor.lineHighlightBorder": "#0D3A58",
 		//    "editor.rangeHighlightBackground": "#1F4662",
 		// and this one is the rest of them
 		"editor.wordHighlightBackground": "#7ce1ee33",
@@ -95,7 +96,7 @@
 		// "editorError.border": "#0d3a58",
 		// "editorError.foreground": "#A22929",
 		// gutter
-		"editorGutter.background": "#020b19",
+		"editorGutter.background": "#111111",
 		"editorGutter.addedBackground": "#99ffee8a",
 		"editorGutter.deletedBackground": "#e84f4f",
 		"editorGutter.modifiedBackground": "#568beed2",
@@ -161,7 +162,7 @@
 		"merge.incomingHeaderBackground": "#185294",
 	
 		// "peekView
-		"peekView.border": "#ffc600",
+		"peekView.border": "#0D3A58",
 		"peekViewEditor.background": "#193549",
 		"peekViewEditor.matchHighlightBackground": "#19354900",
 		"peekViewEditorGutter.background": "#122738",
@@ -191,9 +192,9 @@
 		"sideBar.foreground": "#aaa",
 		"sideBarSectionHeader.foreground": "#aaaaaa",
 		"sideBarTitle.foreground": "#bbbbbb",
-		"sideBar.background": "#020b19",
+		"sideBar.background": "#111111",
 		"sideBar.dropBackground": "#00ffd5",
-		"sideBarSectionHeader.border": "#ffe677",
+		"sideBarSectionHeader.border": "#0D3A58",
 		"sideBarSectionHeader.background": "#010135",
 		// statusBar
 		"statusBar.background": "#15232d",
@@ -208,9 +209,9 @@
 		"statusBarItem.prominentBackground": "#15232d",
 		"statusBarItem.prominentHoverBackground": "#0d3a58",
 		// tab
-		"tab.activeBackground": "#020b19",
+		"tab.activeBackground": "#111111",
 		"tab.activeForeground": "#00ffd5",
-		"tab.border": "#020b19",
+		"tab.border": "#111111",
 		"tab.activeBorder": "#00ffd5",
 		"tab.inactiveBackground": "#193549",
 		"tab.inactiveForeground": "#aaa",
