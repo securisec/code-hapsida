@@ -2,21 +2,21 @@
 	"name": "Hapsida",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#00001c",
+		"editor.background": "#020b19",
 		"editor.foreground": "#eeffff",
-		"quickInput.background": "#00001c",
+		"quickInput.background": "#020b19",
 		"quickInput.foreground": "#eeffff",
 		
 		"editorOverviewRuler.findMatchForeground": "#ff00f2",
 		// panel
-		"panel.background": "#00001c",
-		"panel.border": "#ffe677",
+		"panel.background": "#020b19",
+		"panel.border": "#0D3A58",
 		"panelTitle.activeBorder": "#ffe677",
 		"panelTitle.activeForeground": "#ffe677",
 		"panelTitle.inactiveForeground": "#6d8996",
 	
 		"editor.findMatchBackground": "#faf6e438",
-		"editor.findMatchBorder": "#ffc600",
+		"editor.findMatchBorder": "#0D3A58",
 		"editor.findMatchHighlightBackground": "#0f64e471",
 		"editor.findMatchHighlightBorder": "#faf6e4",
 		"editor.selectionBackground": "#ee7c7c52",
@@ -26,8 +26,8 @@
 		// This section is for testing cobalt
 		//
 		// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L125-L135
-		"input.background": "#00001c", //search bar color
-		"input.border": "#ffe677", //search bar border
+		"input.background": "#020b19", //search bar color
+		"input.border": "#0D3A58", //search bar border
 		"input.foreground": "#ffe677",
 		"input.placeholderForeground": "#aaa",
 		"inputOption.activeBorder": "#00ffd5",
@@ -47,13 +47,13 @@
 		"gitDecoration.conflictingResourceForeground": "#ee7c7c",
 		// activityBar
 		// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L6-L12
-		"activityBar.border": "#ffe677", //sidebar border
+		"activityBar.border": "#0D3A58", //sidebar border
 		"activityBar.dropBackground": "#0d3a58",
 		"activityBar.foreground": "#fff",
 		"activityBarBadge.foreground": "#000",
 		"activityBarBadge.background": "#ffe677",
 		"activityBar.inactiveForeground": "#6f7683",
-		"activityBar.background": "#00001c",
+		"activityBar.background": "#020b19",
 		// badge
 		// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L13-L15
 		"badge.background": "#ffc600",
@@ -83,8 +83,8 @@
 		// "editor.hoverHighlightBackground": "#ffc60033",
 		"editor.inactiveSelectionBackground": "#193549",
 		// current line styles
-		"editor.lineHighlightBackground": "#c41c1000",
-		"editor.lineHighlightBorder": "#ffd900a6",
+		"editor.lineHighlightBackground": "#000000",
+		"editor.lineHighlightBorder": "#00cec4a6",
 		//    "editor.rangeHighlightBackground": "#1F4662",
 		// and this one is the rest of them
 		"editor.wordHighlightBackground": "#7ce1ee33",
@@ -95,7 +95,7 @@
 		// "editorError.border": "#0d3a58",
 		// "editorError.foreground": "#A22929",
 		// gutter
-		"editorGutter.background": "#00001c",
+		"editorGutter.background": "#020b19",
 		"editorGutter.addedBackground": "#99ffee8a",
 		"editorGutter.deletedBackground": "#e84f4f",
 		"editorGutter.modifiedBackground": "#568beed2",
@@ -134,7 +134,7 @@
 		"errorForeground": "#A22929",
 		// error squiggles
 		"editorError.foreground":"#ff0000",
-		"editorError.border":"#ff0000",
+		"editorError.border":"#e84f4f",
 		// extensionButton
 		"extensionButton.prominentBackground": "#0088ff",
 		"extensionButton.prominentForeground": "#fff",
@@ -142,7 +142,7 @@
 		"focusBorder": "#0d3a58",
 		"foreground": "#aaa",
 		"list.activeSelectionBackground": "#193549",
-		"list.activeSelectionForeground": "#aaa",
+		"list.activeSelectionForeground": "#fff",
 		"list.dropBackground": "#0d3a58",
 		"list.focusBackground": "#0d3a58",
 		"list.focusForeground": "#ffe677", //command pallette active selection text
@@ -191,7 +191,7 @@
 		"sideBar.foreground": "#aaa",
 		"sideBarSectionHeader.foreground": "#aaaaaa",
 		"sideBarTitle.foreground": "#bbbbbb",
-		"sideBar.background": "#00001c",
+		"sideBar.background": "#020b19",
 		"sideBar.dropBackground": "#00ffd5",
 		"sideBarSectionHeader.border": "#ffe677",
 		"sideBarSectionHeader.background": "#010135",
@@ -208,10 +208,10 @@
 		"statusBarItem.prominentBackground": "#15232d",
 		"statusBarItem.prominentHoverBackground": "#0d3a58",
 		// tab
-		"tab.activeBackground": "#00001c",
-		"tab.activeForeground": "#ffe677",
-		"tab.border": "#00001c",
-		"tab.activeBorder": "#ffe677",
+		"tab.activeBackground": "#020b19",
+		"tab.activeForeground": "#00ffd5",
+		"tab.border": "#020b19",
+		"tab.activeBorder": "#00ffd5",
 		"tab.inactiveBackground": "#193549",
 		"tab.inactiveForeground": "#aaa",
 		"tab.unfocusedActiveForeground": "#aaa",
