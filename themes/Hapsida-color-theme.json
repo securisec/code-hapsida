@@ -12,7 +12,7 @@
 		// panel
 		"panel.background": "#111111",
 		"panel.border": "#0D3A58",
-		"panelTitle.activeBorder": "#ffe677",
+		"panelTitle.activeBorder": "#ffe082",
 		"panelTitle.activeForeground": "#0D3A58",
 		"panelTitle.inactiveForeground": "#6d8996",
 	
@@ -20,16 +20,16 @@
 		"editor.findMatchBorder": "#0D3A58",
 		"editor.findMatchHighlightBackground": "#0f64e471",
 		"editor.findMatchHighlightBorder": "#faf6e4",
-		"editor.selectionBackground": "#ee7c7c52",
+		"editor.selectionBackground": "#ffab9152",
 		// "editorBracketMatch.border": "#29e2e2",
-		"editor.selectionHighlightBackground": "#ee7c7c63",
+		"editor.selectionHighlightBackground": "#ffab9163",
 		"editorIndentGuide.activeBackground": "#929000",
 		// This section is for testing cobalt
 		//
 		// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L125-L135
 		"input.background": "#111111", //search bar color
 		"input.border": "#0D3A58", //search bar border
-		"input.foreground": "#ffe677",
+		"input.foreground": "#ffe082",
 		"input.placeholderForeground": "#aaa",
 		"inputOption.activeBorder": "#00ffd5",
 		"inputValidation.errorBackground": "#193549",
@@ -41,18 +41,18 @@
 		"selection.background": "#ff0000",
 		// Git status colors in File Explorer
 		// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L248-L253
-		"gitDecoration.modifiedResourceForeground": "#ffe677",
-		"gitDecoration.deletedResourceForeground": "#ee7c7c",
+		"gitDecoration.modifiedResourceForeground": "#ffe082",
+		"gitDecoration.deletedResourceForeground": "#ffab91",
 		"gitDecoration.untrackedResourceForeground": "#00ffd5",
-		"gitDecoration.ignoredResourceForeground": "#ee7c7c",
-		"gitDecoration.conflictingResourceForeground": "#ee7c7c",
+		"gitDecoration.ignoredResourceForeground": "#ffab91",
+		"gitDecoration.conflictingResourceForeground": "#ffab91",
 		// activityBar
 		// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L6-L12
 		"activityBar.border": "#0D3A58", //sidebar border
 		"activityBar.dropBackground": "#0d3a58",
 		"activityBar.foreground": "#fff",
 		"activityBarBadge.foreground": "#000",
-		"activityBarBadge.background": "#ffe677",
+		"activityBarBadge.background": "#ffe082",
 		"activityBar.inactiveForeground": "#6f7683",
 		"activityBar.background": "#111111",
 		// badge
@@ -146,8 +146,8 @@
 		"list.activeSelectionForeground": "#fff",
 		"list.dropBackground": "#0d3a58",
 		"list.focusBackground": "#0d3a58",
-		"list.focusForeground": "#ffe677", //command pallette active selection text
-		"list.highlightForeground": "#ee7c7c",
+		"list.focusForeground": "#ffe082", //command pallette active selection text
+		"list.highlightForeground": "#ffab91",
 		"list.hoverBackground": "#193549",
 		"list.hoverForeground": "#aaa",
 		"list.inactiveSelectionBackground": "#0d3a58",
@@ -177,7 +177,7 @@
 		"peekViewTitleDescription.foreground": "#aaa",
 		"peekViewTitleLabel.foreground": "#ffc600",
 		// picker
-		"pickerGroup.foreground": "#4df4ff",
+		"pickerGroup.foreground": "#81d4fa",
 		"pickerGroup.border": "#ffe033",
 		// progressBar
 		"progressBar.background": "#ffc600",
@@ -291,7 +291,7 @@
 				"punctuation.definition.template-expression.end"
 			],
 			"settings": {
-				"foreground": "#4df4ff"
+				"foreground": "#81d4fa"
 			}
 		},
 		{
@@ -304,14 +304,14 @@
 		{
 			"scope": ["support.variable.object", "support.variable.property"],
 			"settings": {
-				"foreground": "#f696db",
+				"foreground": "#d1c4e9",
 				"fontStyle": "italic"
 			}
 		},
 		{
 			"scope": ["entity.name.tag.yaml"],
 			"settings": {
-				"foreground": "#4df4ff",
+				"foreground": "#81d4fa",
 				"fontStyle": "italic"
 			}
 		},
@@ -348,7 +348,7 @@
 			"name": "Keyword, Storage",
 			"scope": ["keyword", "storage.type", "storage.modifier"],
 			"settings": {
-				"foreground": "#b2fd6d",
+				"foreground": "#64ffda",
 				"fontStyle": "italic"
 			}
 		},
@@ -369,7 +369,7 @@
 				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#ee7c7c",
+				"foreground": "#ffab91",
 				"fontStyle": "italic"
 			}
 		},
@@ -394,7 +394,7 @@
 				"keyword.other.special-method"
 			],
 			"settings": {
-				"foreground": "#4df4ff"
+				"foreground": "#81d4fa"
 			}
 		},
 		{
@@ -423,7 +423,7 @@
 				"keyword.other"
 			],
 			"settings": {
-				"foreground": "#f696db"
+				"foreground": "#d1c4e9"
 			}
 		},
 		{
@@ -439,7 +439,7 @@
 				"string.quoted.double.json"
 			],
 			"settings": {
-				"foreground": "#ffe677"
+				"foreground": "#ffe082"
 			}
 		},
 		{
@@ -455,7 +455,7 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#f696db"
+				"foreground": "#d1c4e9"
 			}
 		},
 		{
@@ -487,7 +487,7 @@
 				"variable.other.class.js"
 			],
 			"settings": {
-				"foreground": "#FF5370"
+				"foreground": "#f8bbd0"
 			}
 		},
 		{
@@ -495,7 +495,7 @@
 			"scope": ["variable.language"],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#FF5370"
+				"foreground": "#f8bbd0"
 			}
 		},
 		{
@@ -513,7 +513,7 @@
 				"variable.function.constructor"
 			],
 			"settings": {
-				"foreground": "#f696db"
+				"foreground": "#d1c4e9"
 			}
 		},
 		{
@@ -559,7 +559,7 @@
 			"name": "Deleted",
 			"scope": ["markup.deleted"],
 			"settings": {
-				"foreground": "#FF5370"
+				"foreground": "#f8bbd0"
 			}
 		},
 		{
@@ -608,7 +608,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#FF5370"
+				"foreground": "#f8bbd0"
 			}
 		},
 		{
@@ -626,7 +626,7 @@
 				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
 			],
 			"settings": {
-				"foreground": "#4df4ff"
+				"foreground": "#81d4fa"
 			}
 		},
 		{
@@ -765,7 +765,7 @@
 			"scope": ["markup.underline"],
 			"settings": {
 				"fontStyle": "underline",
-				"foreground": "#f696db"
+				"foreground": "#d1c4e9"
 			}
 		},
 		{
@@ -862,7 +862,7 @@
 		{
 			"scope": ["meta.function-call.arguments.python"],
 			"settings": {
-				"foreground": "#f696db"
+				"foreground": "#d1c4e9"
 			}
 		},
 
