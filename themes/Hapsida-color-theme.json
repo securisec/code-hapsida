@@ -2,15 +2,15 @@
 	"name": "Hapsida",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#111111",
+		"editor.background": "#080808",
 		// "editor.background": "#0x20b19",
 		"editor.foreground": "#eeffff",
-		"quickInput.background": "#111111",
+		"quickInput.background": "#080808",
 		"quickInput.foreground": "#eeffff",
 		
 		"editorOverviewRuler.findMatchForeground": "#ff00f2",
 		// panel
-		"panel.background": "#111111",
+		"panel.background": "#080808",
 		"panel.border": "#0D3A58",
 		"panelTitle.activeBorder": "#ffe082",
 		"panelTitle.activeForeground": "#0D3A58",
@@ -27,7 +27,7 @@
 		// This section is for testing cobalt
 		//
 		// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L125-L135
-		"input.background": "#111111", //search bar color
+		"input.background": "#080808", //search bar color
 		"input.border": "#0D3A58", //search bar border
 		"input.foreground": "#ffe082",
 		"input.placeholderForeground": "#aaa",
@@ -54,7 +54,7 @@
 		"activityBarBadge.foreground": "#000",
 		"activityBarBadge.background": "#ffe082",
 		"activityBar.inactiveForeground": "#6f7683",
-		"activityBar.background": "#111111",
+		"activityBar.background": "#080808",
 		// badge
 		// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L13-L15
 		"badge.background": "#ffc600",
@@ -96,7 +96,7 @@
 		// "editorError.border": "#0d3a58",
 		// "editorError.foreground": "#A22929",
 		// gutter
-		"editorGutter.background": "#111111",
+		"editorGutter.background": "#080808",
 		"editorGutter.addedBackground": "#99ffee8a",
 		"editorGutter.deletedBackground": "#e84f4f",
 		"editorGutter.modifiedBackground": "#568beed2",
@@ -192,7 +192,7 @@
 		"sideBar.foreground": "#aaa",
 		"sideBarSectionHeader.foreground": "#aaaaaa",
 		"sideBarTitle.foreground": "#bbbbbb",
-		"sideBar.background": "#111111",
+		"sideBar.background": "#080808",
 		"sideBar.dropBackground": "#00ffd5",
 		"sideBarSectionHeader.border": "#0D3A58",
 		"sideBarSectionHeader.background": "#010135",
@@ -209,9 +209,9 @@
 		"statusBarItem.prominentBackground": "#15232d",
 		"statusBarItem.prominentHoverBackground": "#0d3a58",
 		// tab
-		"tab.activeBackground": "#111111",
+		"tab.activeBackground": "#080808",
 		"tab.activeForeground": "#00ffd5",
-		"tab.border": "#111111",
+		"tab.border": "#080808",
 		"tab.activeBorder": "#00ffd5",
 		"tab.inactiveBackground": "#193549",
 		"tab.inactiveForeground": "#aaa",
