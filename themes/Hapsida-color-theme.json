@@ -871,7 +871,7 @@
 			"scope": ["variable.language.special.self.python"],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#ffb000"
+				"foreground": "#ffccbc"
 			}
 		},
 		{
@@ -886,6 +886,92 @@
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "#6d8996"
+			}
+		},
+
+		// HTML
+		{
+			"scope": [
+				"entity.name.tag.other.html"
+			],
+			"settings": {
+				"foreground": "#ffccbc",
+			}
+		},
+
+		// All
+		{
+			"scope": [
+				"support.function.builtin"
+			],
+			"settings": {
+				"foreground": "#ccff90"
+			}
+		},
+		{
+			"scope": [
+				"meta.function-call.generic"
+			],
+			"settings": {
+				"foreground": "#fffde7"
+			}
+		},
+
+		// regex
+		{
+			"scope": [
+				"constant.character.set.regexp"
+			],
+			"settings": {
+				"foreground": "#d1c4e9"
+			}
+		},
+		{
+			"scope": [
+				"constant.other.set.regexp"
+			],
+			"settings": {
+				"foreground": "#6ff9ff"
+			}
+		},
+		{
+			"scope": [
+				"keyword.operator.quantifier.regexp"
+			],
+			"settings": {
+				"foreground": "#ffee58",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": [
+				"punctuation.parenthesis.begin.regexp",
+				"punctuation.parenthesis.end.regexp",
+				"punctuation.parenthesis.non-capturing.begin.regexp",
+				"punctuation.parenthesis.non-capturing.end.regexp",
+				"keyword.operator.disjunction.regexp"
+			],
+			"settings": {
+				"foreground": "#ff7043",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": [
+				"support.other.escape.special.regexp"
+			],
+			"settings": {
+				"foreground": "#b2ff59",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": [
+				"keyword.operator.negation.regexp"
+			],
+			"settings": {
+				"foreground": "#f44336",
+				"fontStyle": ""
 			}
 		},
 	]
