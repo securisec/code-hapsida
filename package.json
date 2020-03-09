@@ -9,6 +9,9 @@
     "scripts": {
         "build": "vsce package"
     },
+    "repository": {
+        "url": "https://github.com/securisec/code-hapsida"
+    },
     "publisher": "securisec",
     "categories": [
         "Themes"

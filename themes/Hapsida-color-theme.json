@@ -38,7 +38,7 @@
 		"inputValidation.infoBorder": "#0D3A58",
 		"inputValidation.warningBackground": "#193549",
 		"inputValidation.warningBorder": "#ffc600",
-		"selection.background": "#ff0000",
+		"selection.background": "#b4004e",
 		// Git status colors in File Explorer
 		// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L248-L253
 		"gitDecoration.modifiedResourceForeground": "#ffe082",
@@ -967,12 +967,25 @@
 		},
 		{
 			"scope": [
-				"keyword.operator.negation.regexp"
+				"keyword.operator.negation.regexp",
+				"keyword.operator.disjunction.regexp",
+				"keyword.control.anchor.regexp"
 			],
 			"settings": {
-				"foreground": "#f44336",
+				"foreground": "#ff6e40",
 				"fontStyle": ""
 			}
 		},
+		{
+			"scope": [
+				"meta.assertion.negative-look-ahead.regexp",
+				"meta.assertion.negative-look-behind.regexp",
+				"meta.assertion.look-ahead.regexp",
+				"meta.assertion.look-behind.regexp",
+			],
+			"settings": {
+				"foreground": "#ccff90"
+			}
+		}
 	]
 }
