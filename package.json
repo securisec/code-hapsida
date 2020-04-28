@@ -1,28 +1,41 @@
 {
-    "name": "hapsida-securisec",
-    "displayName": "hapsida.securisec",
-    "description": "",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.41.0"
-    },
-    "scripts": {
-        "build": "vsce package"
-    },
-    "repository": {
-        "url": "https://github.com/securisec/code-hapsida"
-    },
-    "publisher": "securisec",
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Hapsida",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Hapsida-color-theme.json"
-            }
-        ]
-    }
+	"name": "hapsida-securisec",
+	"displayName": "hapsida.securisec",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"scripts": {
+		"build": "vsce package"
+	},
+	"repository": {
+		"url": "https://github.com/securisec/code-hapsida"
+	},
+	"publisher": "securisec",
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Hapsida Material",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Hapsida-material-theme.json"
+			},
+			{
+				"label": "Hapsida Candy",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Hapsida-candy-theme.json"
+			},
+			{
+				"label": "Hapsida Fancy",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Hapsida-Fancy-theme.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"@types/node": "^13.13.4"
+	}
 }

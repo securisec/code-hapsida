@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+    "outDir": "dist",
+    // "lib": ["dom","ESNext"],
+		"sourceMap": true,
+		// "strict": true,
+		"target": "ES6"
+	},
+	"compileOnSave": true,
+	"include": ["src"]
+}

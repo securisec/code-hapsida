@@ -7,7 +7,7 @@
 		"editor.foreground": "#eeffff",
 		"quickInput.background": "#080808",
 		"quickInput.foreground": "#eeffff",
-		
+
 		"editorOverviewRuler.findMatchForeground": "#ff00f2",
 		// panel
 		"panel.background": "#080808",
@@ -15,14 +15,14 @@
 		"panelTitle.activeBorder": "#ffe082",
 		"panelTitle.activeForeground": "#0D3A58",
 		"panelTitle.inactiveForeground": "#6d8996",
-	
+
 		"editor.findMatchBackground": "#faf6e438",
 		"editor.findMatchBorder": "#0D3A58",
 		"editor.findMatchHighlightBackground": "#0f64e471",
 		"editor.findMatchHighlightBorder": "#faf6e4",
 		"editor.selectionBackground": "#ffab9152",
 		// "editorBracketMatch.border": "#29e2e2",
-		"editor.selectionHighlightBackground": "#ffab9163",
+		"editor.selectionHighlightBackground": "#3f51b588",
 		"editorIndentGuide.activeBackground": "#929000",
 		// This section is for testing cobalt
 		//
@@ -134,8 +134,8 @@
 		"editorWidget.border": "#0d3a58",
 		"errorForeground": "#A22929",
 		// error squiggles
-		"editorError.foreground":"#ff0000",
-		"editorError.border":"#e84f4f",
+		"editorError.foreground": "#ff0000",
+		"editorError.border": "#e84f4f",
 		// extensionButton
 		"extensionButton.prominentBackground": "#0088ff",
 		"extensionButton.prominentForeground": "#fff",
@@ -160,7 +160,7 @@
 		"merge.currentHeaderBackground": "#2F7366",
 		"merge.incomingContentBackground": "#185294",
 		"merge.incomingHeaderBackground": "#185294",
-	
+
 		// "peekView
 		"peekView.border": "#0D3A58",
 		"peekViewEditor.background": "#193549",
@@ -254,7 +254,7 @@
 		"walkThrough.embeddedEditorBackground": "#0d3a58",
 		"welcomePage.buttonBackground": "#193549",
 		"welcomePage.buttonHoverBackground": "#0d3a58",
-		"widget.shadow": "#00000026",
+		"widget.shadow": "#00000026"
 	},
 	"tokenColors": [
 		{
@@ -614,6 +614,15 @@
 		{
 			"name": "JSON Key - Level 0",
 			"scope": [
+				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json"
+			],
+			"settings": {
+				"foreground": "#f48fb1"
+			}
+		},
+		{
+			"name": "JSON Key - Level 0",
+			"scope": [
 				"source.json meta.structure.dictionary.json support.type.property-name.json"
 			],
 			"settings": {
@@ -857,6 +866,14 @@
 				"foreground": "#EEFFFF"
 			}
 		},
+		// go
+
+		{
+			"scope": ["constant.other.placeholder.go"],
+			"settings": {
+				"foreground": "#d1c4e9"
+			}
+		},
 		// python
 
 		{
@@ -891,27 +908,21 @@
 
 		// HTML
 		{
-			"scope": [
-				"entity.name.tag.other.html"
-			],
+			"scope": ["entity.name.tag.other.html"],
 			"settings": {
-				"foreground": "#ffccbc",
+				"foreground": "#ffccbc"
 			}
 		},
 
 		// All
 		{
-			"scope": [
-				"support.function.builtin"
-			],
+			"scope": ["support.function.builtin"],
 			"settings": {
 				"foreground": "#ccff90"
 			}
 		},
 		{
-			"scope": [
-				"meta.function-call.generic"
-			],
+			"scope": ["meta.function-call.generic"],
 			"settings": {
 				"foreground": "#fffde7"
 			}
@@ -919,27 +930,28 @@
 
 		// regex
 		{
-			"scope": [
-				"constant.character.set.regexp"
-			],
+			"scope": ["constant.character.set.regexp"],
 			"settings": {
 				"foreground": "#d1c4e9"
 			}
 		},
 		{
-			"scope": [
-				"constant.other.set.regexp"
-			],
+			"scope": ["constant.other.set.regexp"],
 			"settings": {
 				"foreground": "#6ff9ff"
 			}
 		},
 		{
-			"scope": [
-				"keyword.operator.quantifier.regexp"
-			],
+			"scope": ["keyword.operator.quantifier.regexp"],
 			"settings": {
 				"foreground": "#ffee58",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": ["constant.other.character-class.regexp"],
+			"settings": {
+				"foreground": "#c6ff00",
 				"fontStyle": ""
 			}
 		},
@@ -957,9 +969,7 @@
 			}
 		},
 		{
-			"scope": [
-				"support.other.escape.special.regexp"
-			],
+			"scope": ["support.other.escape.special.regexp"],
 			"settings": {
 				"foreground": "#b2ff59",
 				"fontStyle": ""
@@ -981,7 +991,7 @@
 				"meta.assertion.negative-look-ahead.regexp",
 				"meta.assertion.negative-look-behind.regexp",
 				"meta.assertion.look-ahead.regexp",
-				"meta.assertion.look-behind.regexp",
+				"meta.assertion.look-behind.regexp"
 			],
 			"settings": {
 				"foreground": "#ccff90"
