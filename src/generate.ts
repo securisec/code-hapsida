@@ -10,19 +10,20 @@ const makeTheme = (o: Options) => {
 
 // fancy
 makeTheme({
-  name: 'Fancy',
+  name: 'Dark',
   colors: {
-    background: '#263238',
-    arguments: '#c6ff00',
-    classname: '#ccff90',
-    controlflow: '#ff80ab',
-    exportbool: '#ff6150',
-    expression: '#ffd180',
-    functions: '#b9f6ca',
-    objectkeys: '#c0cfff',
-    strings: '#ffcb00',
-    types: '#82b1ff',
-    green: {a: '#54d2d2'},
-    red: {a: '#ff6150'}
+    // background: '#263238', fanct
+    background: '#0c0f1b',
+    arguments: '#bdfe67',
+    classname: '#bdfe67',
+    controlflow: '#ffb3de',
+    exportbool: '#e86830',
+    expression: '#67fea8',
+    functions: '#9deee6',
+    objectkeys: '#eebd9d',
+    strings: '#fef467',
+    types: '#fffeee',
+    green: {a: '#a5ee9d'},
+    red: {a: '#fe6772'}
   }
 })

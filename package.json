@@ -32,6 +32,11 @@
 				"label": "Hapsida Fancy",
 				"uiTheme": "vs-dark",
 				"path": "./themes/Hapsida-Fancy-theme.json"
+			},
+			{
+				"label": "Hapsida Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Hapsida-Dark-theme.json"
 			}
 		]
 	},

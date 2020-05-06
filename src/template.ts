@@ -5,15 +5,15 @@ export const template = (o: Options) => {
 		name: o.name,
 		type: 'dark',
 		colors: {
-			'editor.background': '#080808',
+			'editor.background': o.colors.background,
 			// "editor.background": "#0x20b19",
 			'editor.foreground': '#eeffff',
-			'quickInput.background': '#080808',
+			'quickInput.background': o.colors.background,
 			'quickInput.foreground': '#eeffff',
 
 			'editorOverviewRuler.findMatchForeground': '#ff00f2',
 			// panel
-			'panel.background': '#080808',
+			'panel.background': o.colors.background,
 			'panel.border': '#0D3A58',
 			'panelTitle.activeBorder': o.colors.strings,
 			'panelTitle.activeForeground': '#0D3A58',
@@ -30,7 +30,7 @@ export const template = (o: Options) => {
 			// This section is for testing cobalt
 			//
 			// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L125-L135
-			'input.background': '#080808', //search bar color
+			'input.background': o.colors.background, //search bar color
 			'input.border': '#0D3A58', //search bar border
 			'input.foreground': o.colors.strings,
 			'input.placeholderForeground': '#aaa',
@@ -57,7 +57,7 @@ export const template = (o: Options) => {
 			'activityBarBadge.foreground': '#000',
 			'activityBarBadge.background': o.colors.strings,
 			'activityBar.inactiveForeground': '#6f7683',
-			'activityBar.background': '#080808',
+			'activityBar.background': o.colors.background,
 			// badge
 			// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L13-L15
 			'badge.background': '#ffc600',
@@ -99,7 +99,7 @@ export const template = (o: Options) => {
 			// "editorError.border": "#0d3a58",
 			// "editorError.foreground": "#A22929",
 			// gutter
-			'editorGutter.background': '#080808',
+			'editorGutter.background': o.colors.background,
 			'editorGutter.addedBackground': '#99ffee8a',
 			'editorGutter.deletedBackground': o.colors.red.a,
 			'editorGutter.modifiedBackground': '#568beed2',
@@ -195,7 +195,7 @@ export const template = (o: Options) => {
 			'sideBar.foreground': '#aaa',
 			'sideBarSectionHeader.foreground': '#aaaaaa',
 			'sideBarTitle.foreground': '#bbbbbb',
-			'sideBar.background': '#080808',
+			'sideBar.background': o.colors.background,
 			'sideBar.dropBackground': o.colors.classname,
 			'sideBarSectionHeader.border': '#0D3A58',
 			'sideBarSectionHeader.background': '#010135',
@@ -212,9 +212,9 @@ export const template = (o: Options) => {
 			'statusBarItem.prominentBackground': '#15232d',
 			'statusBarItem.prominentHoverBackground': '#0d3a58',
 			// tab
-			'tab.activeBackground': '#080808',
+			'tab.activeBackground': o.colors.background,
 			'tab.activeForeground': o.colors.classname,
-			'tab.border': '#080808',
+			'tab.border': o.colors.background,
 			'tab.activeBorder': o.colors.classname,
 			'tab.inactiveBackground': '#193549',
 			'tab.inactiveForeground': '#aaa',
