@@ -10,20 +10,23 @@ const makeTheme = (o: Options) => {
 
 // fancy
 makeTheme({
-  name: 'Dark',
+  name: 'Nightfly',
   colors: {
     // background: '#263238', fanct
-    background: '#0c0f1b',
+    background: '#050025',
+    foreground: '#fffffB',
     arguments: '#bdfe67',
     classname: '#bdfe67',
-    controlflow: '#ffb3de',
-    exportbool: '#e86830',
+    controlflow: '#ED6477',
+    conditional: '#E99173',
+    exportbool: '#E99173',
     expression: '#67fea8',
-    functions: '#9deee6',
-    objectkeys: '#eebd9d',
-    strings: '#fef467',
-    types: '#fffeee',
-    green: {a: '#a5ee9d'},
-    red: {a: '#fe6772'}
+    functions: '#bed1fc',
+    objectkeys: '#95D9CA',
+    strings: '#F8CC94',
+    types: '#AACB6D',
+    green: {a: '#57B59C'},
+    red: {a: '#EA5E56'},
+    blue: {a: '#E1D193'}
   }
 })

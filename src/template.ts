@@ -7,7 +7,7 @@ export const template = (o: Options) => {
 		colors: {
 			'editor.background': o.colors.background,
 			// "editor.background": "#0x20b19",
-			'editor.foreground': '#eeffff',
+			'editor.foreground': o.colors.foreground,
 			'quickInput.background': o.colors.background,
 			'quickInput.foreground': '#eeffff',
 
@@ -268,6 +268,13 @@ export const template = (o: Options) => {
 				},
 			},
 			{
+				scope: ['keyword.control.conditional'],
+				settings: {
+					foreground: o.colors.conditional,
+					fontStyle: '',
+				},
+			},
+			{
 				scope: ['entity.name.type.class'],
 				settings: {
 					foreground: o.colors.classname,
@@ -402,9 +409,9 @@ export const template = (o: Options) => {
 			},
 			{
 				name: 'Block Level Variables',
-				scope: ['meta.block variable.other'],
+				scope: ['meta.block', 'variable.other'],
 				settings: {
-					foreground: o.colors.objectkeys,
+					foreground: o.colors.foreground,
 				},
 			},
 			{
@@ -426,7 +433,7 @@ export const template = (o: Options) => {
 					'keyword.other',
 				],
 				settings: {
-					foreground: o.colors.types,
+					foreground: o.colors.foreground,
 				},
 			},
 			{
@@ -444,6 +451,12 @@ export const template = (o: Options) => {
 				settings: {
 					foreground: o.colors.strings,
 				},
+			},
+			{
+				scope: ['support.class.builtin', 'entity.name.type'],
+				settings: {
+					foreground: o.colors.blue.a
+				}
 			},
 			{
 				name: 'Class, Support',

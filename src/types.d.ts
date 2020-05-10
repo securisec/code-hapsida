@@ -5,8 +5,10 @@ export interface Options {
 		functions: string;
 		expression: string;
 		controlflow: string;
+		conditional: string;
 		strings: string;
 		types: string;
+		foreground: string;
 		arguments: string;
 		objectkeys: string;
 		classname: string;
@@ -26,6 +28,21 @@ export interface Options {
 			a: string;
 		};
 		red: {
+			a: string;
+		};
+		blue?: {
+			a: string;
+		};
+		yellow?: {
+			a: string;
+		};
+		orange?: {
+			a: string;
+		};
+		purple?: {
+			a: string;
+		};
+		cyan?: {
 			a: string;
 		};
 	};
