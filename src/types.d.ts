@@ -13,6 +13,8 @@ export interface Options {
 		objectkeys: string;
 		classname: string;
 		exportbool: string;
+		selection: string;
+		variables: string;
 		python?: {
 			self?: string;
 			type?: string;
@@ -31,7 +33,8 @@ export interface Options {
 			a: string;
 		};
 		blue?: {
-			a: string;
+			a?: string;
+			b?: string;
 		};
 		yellow?: {
 			a: string;

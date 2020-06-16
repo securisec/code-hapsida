@@ -10,23 +10,26 @@ const makeTheme = (o: Options) => {
 
 // fancy
 makeTheme({
-  name: 'Nightfly',
+  name: 'Gruvbox',
   colors: {
     // background: '#263238', fanct
-    background: '#050025',
-    foreground: '#fffffB',
-    arguments: '#bdfe67',
-    classname: '#bdfe67',
-    controlflow: '#ED6477',
+    background: '#090c09',
+    foreground: '#fbf1c7',
+    arguments: '#fabd2f',
+    variables: '#ebdbb2',
+    classname: '#fabd2f',
+    controlflow: '#fb4934',
+    selection: '#ed64765d',
     conditional: '#E99173',
     exportbool: '#E99173',
-    expression: '#67fea8',
-    functions: '#bed1fc',
+    expression: '#95D9CA',
+    functions: '#b8bb26',
     objectkeys: '#95D9CA',
-    strings: '#F8CC94',
-    types: '#AACB6D',
-    green: {a: '#57B59C'},
+    strings: '#99BE83',
+    types: '#d893a5',
+    green: {a: '#ffe2be'},
     red: {a: '#EA5E56'},
-    blue: {a: '#E1D193'}
+    blue: {a: '#fabd2f', b: '#d893a5'},
+    orange: {a: '#d65d0e'}
   }
 })

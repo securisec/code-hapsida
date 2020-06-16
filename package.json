@@ -2,7 +2,7 @@
 	"name": "hapsida-securisec",
 	"displayName": "hapsida.securisec",
 	"description": "",
-	"version": "0.0.1",
+	"version": "0.0.4",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
@@ -32,6 +32,11 @@
 				"label": "Hapsida Fancy",
 				"uiTheme": "vs-dark",
 				"path": "./themes/Hapsida-Fancy-theme.json"
+			},
+			{
+				"label": "Hapsida Gruvbox",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Hapsida-Gruvbox-theme.json"
 			},
 			{
 				"label": "Hapsida Nightfly",

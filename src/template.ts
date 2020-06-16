@@ -22,8 +22,8 @@ export const template = (o: Options) => {
 			'editor.findMatchBackground': o.colors.objectkeys,
 			'editor.findMatchBorder': '#0D3A58',
 			'editor.findMatchHighlightBackground': '#0f64e471',
-			'editor.findMatchHighlightBorder': o.colors.objectkeys,
-			'editor.selectionBackground': o.colors.controlflow,
+			'editor.findMatchHighlightBorder': o.colors.selection,
+			'editor.selectionBackground': o.colors.selection,
 			// "editorBracketMatch.border": "#29e2e2",
 			'editor.selectionHighlightBackground': '#3f51b588',
 			'editorIndentGuide.activeBackground': '#929000',
@@ -335,9 +335,9 @@ export const template = (o: Options) => {
 			},
 			{
 				name: 'Variables',
-				scope: ['variable', 'string constant.other.placeholder'],
+				scope: ['variable.other.assignment', 'variable', 'string constant.other.placeholder'],
 				settings: {
-					foreground: '#EEFFFF',
+					foreground: o.colors.variables,
 				},
 			},
 			{
@@ -356,11 +356,18 @@ export const template = (o: Options) => {
 			},
 			{
 				name: 'Keyword, Storage',
-				scope: ['keyword', 'storage.type', 'storage.modifier'],
+				scope: ['storage.type', 'storage.modifier', 'keyword'],
 				settings: {
 					foreground: o.colors.expression,
 					fontStyle: 'italic',
 				},
+			},
+			{
+				scope: ['keyword.operator'],
+				settings: {
+					foreground: o.colors.orange.a,
+					fontStyle: ''
+				}
 			},
 			{
 				name: 'Operator, Misc',
@@ -533,21 +540,13 @@ export const template = (o: Options) => {
 				},
 			},
 			{
-				name: 'Attributes',
-				scope: ['entity.other.attribute-name'],
-				settings: {
-					foreground: o.colors.green.a,
-				},
-			},
-			{
 				name: 'HTML Attributes',
 				scope: [
-					'text.html.basic entity.other.attribute-name.html',
-					'text.html.basic entity.other.attribute-name',
+					'entity.other.attribute-name',
 				],
 				settings: {
 					fontStyle: 'italic',
-					foreground: '#fff0a6',
+					foreground: o.colors.blue.b,
 				},
 			},
 			{
@@ -934,7 +933,7 @@ export const template = (o: Options) => {
 			{
 				scope: ['support.function.builtin'],
 				settings: {
-					foreground: '#ccff90',
+					foreground: o.colors.green.a,
 				},
 			},
 			{
@@ -1010,7 +1009,7 @@ export const template = (o: Options) => {
 					'meta.assertion.look-behind.regexp',
 				],
 				settings: {
-					foreground: o.colors.regex?.green || '#ccff90',
+					foreground: o.colors.regex?.green || o.colors.green.a,
 				},
 			},
 		],
