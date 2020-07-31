@@ -353,9 +353,15 @@
 			}
 		},
 		{
+      "scope": ["keyword.control"],
+      "settings": {
+        "foreground": "#ffab91",
+        "fontStyle": "bold"
+      }
+    },
+		{
 			"name": "Operator, Misc",
 			"scope": [
-				"keyword.control",
 				"constant.other.color",
 				// "punctuation",
 				"meta.tag",

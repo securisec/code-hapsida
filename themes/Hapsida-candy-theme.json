@@ -355,7 +355,6 @@
 		{
 			"name": "Operator, Misc",
 			"scope": [
-				"keyword.control",
 				"constant.other.color",
 				// "punctuation",
 				"meta.tag",

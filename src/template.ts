@@ -370,9 +370,15 @@ export const template = (o: Options) => {
 				}
 			},
 			{
+				scope: ['keyword.control'],
+				settings: {
+					foreground: o.colors.controlflow,
+					fontStyle: 'bold'
+				}
+			},
+			{
 				name: 'Operator, Misc',
 				scope: [
-					'keyword.control',
 					'constant.other.color',
 					// "punctuation",
 					'meta.tag',

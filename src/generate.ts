@@ -10,26 +10,26 @@ const makeTheme = (o: Options) => {
 
 // fancy
 makeTheme({
-  name: 'Gruvbox',
+  name: 'Tailwind',
   colors: {
     // background: '#263238', fanct
-    background: '#090c09',
-    foreground: '#fbf1c7',
-    arguments: '#fabd2f',
-    variables: '#ebdbb2',
-    classname: '#fabd2f',
-    controlflow: '#fb4934',
+    background: '#181e29',
+    foreground: '#F7FAFC',
+    arguments: '#FBD38D',
+    variables: '#FED7D7',
+    classname: '#FBD38D',
+    controlflow: '#FEB2B2',
     selection: '#ed64765d',
-    conditional: '#E99173',
-    exportbool: '#E99173',
-    expression: '#95D9CA',
-    functions: '#b8bb26',
-    objectkeys: '#95D9CA',
-    strings: '#99BE83',
-    types: '#d893a5',
+    conditional: '#F6E05E',
+    exportbool: '#F6E05E',
+    expression: '#9AE6B4',
+    functions: '#A3BFFA',
+    objectkeys: '#81E6D9',
+    strings: '#81E6D9',
+    types: '#E9D8FD',
     green: {a: '#ffe2be'},
-    red: {a: '#EA5E56'},
-    blue: {a: '#fabd2f', b: '#d893a5'},
+    red: {a: '#F687B3'},
+    blue: {a: '#D6BCFA', b: '#E9D8FD'},
     orange: {a: '#d65d0e'}
   }
 })

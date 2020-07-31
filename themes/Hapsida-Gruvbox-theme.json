@@ -31,9 +31,9 @@
     "inputValidation.warningBackground": "#193549",
     "inputValidation.warningBorder": "#ffc600",
     "selection.background": "#b4004e",
-    "gitDecoration.modifiedResourceForeground": "#99BE83",
+    "gitDecoration.modifiedResourceForeground": "#fabd2f",
     "gitDecoration.deletedResourceForeground": "#fb4934",
-    "gitDecoration.untrackedResourceForeground": "#fabd2f",
+    "gitDecoration.untrackedResourceForeground": "#99BE83",
     "gitDecoration.ignoredResourceForeground": "#fb4934",
     "gitDecoration.conflictingResourceForeground": "#fb4934",
     "activityBar.border": "#0D3A58",
@@ -354,9 +354,15 @@
       }
     },
     {
+      "scope": ["keyword.control"],
+      "settings": {
+        "foreground": "#d65d0e",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "name": "Operator, Misc",
       "scope": [
-        "keyword.control",
         "constant.other.color",
         "meta.tag",
         "punctuation.definition.tag",
@@ -394,7 +400,7 @@
         "keyword.other.special-method"
       ],
       "settings": {
-        "foreground": "#b8bb26"
+        "foreground": "#95D9CA"
       }
     },
     {
