@@ -13,7 +13,7 @@ makeTheme({
   name: 'Tailwind',
   colors: {
     // background: '#263238', fanct
-    background: '#181e29',
+    background: '#141a24',
     foreground: '#F7FAFC',
     arguments: '#FBD38D',
     variables: '#FED7D7',
@@ -26,7 +26,7 @@ makeTheme({
     functions: '#A3BFFA',
     objectkeys: '#81E6D9',
     strings: '#81E6D9',
-    types: '#E9D8FD',
+    types: '#BEE3F8',
     green: {a: '#ffe2be'},
     red: {a: '#F687B3'},
     blue: {a: '#D6BCFA', b: '#E9D8FD'},

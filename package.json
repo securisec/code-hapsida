@@ -2,7 +2,7 @@
 	"name": "hapsida-securisec",
 	"displayName": "hapsida.securisec",
 	"description": "",
-	"version": "0.0.6",
+	"version": "0.0.8",
 	"engines": {
 		"vscode": "^1.41.0"
 	},

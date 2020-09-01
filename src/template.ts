@@ -898,6 +898,13 @@ export const template = (o: Options) => {
 			// python
 
 			{
+				scope: ['meta.item-access.python'],
+				settings: {
+					foreground: o.colors.types
+				}
+			},
+
+			{
 				scope: ['meta.function-call.arguments.python'],
 				settings: {
 					foreground: o.colors.types,
