@@ -1,0 +1,11 @@
+boolean: true
+number: 123
+object:
+  - name: some
+    val: value
+nested:
+  object:
+    lives:
+      - here
+      - and
+      - there

@@ -1,0 +1,15 @@
+{
+  "some": "string",
+  "boolean": true,
+  "number": 123,
+  "array": [
+    {"type": "some", "val": "val"}
+  ],
+  "nested": {
+    "object": {
+      "array": [
+        1, 2, false, "some"
+      ]
+    }
+  }
+}

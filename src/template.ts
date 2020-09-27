@@ -1,4 +1,4 @@
-import { Options } from "./types";
+import { Options } from './types';
 
 export const template = (o: Options) => {
 	return {
@@ -6,292 +6,288 @@ export const template = (o: Options) => {
 		type: 'dark',
 		colors: {
 			'editor.background': o.colors.background,
-			// "editor.background": "#0x20b19",
 			'editor.foreground': o.colors.foreground,
 			'quickInput.background': o.colors.background,
-			'quickInput.foreground': '#eeffff',
+			'quickInput.foreground': o.colors.check,
 
-			'editorOverviewRuler.findMatchForeground': '#ff00f2',
+			'editorOverviewRuler.findMatchForeground': o.colors.check,
 			// panel
 			'panel.background': o.colors.background,
-			'panel.border': '#0D3A58',
-			'panelTitle.activeBorder': o.colors.strings,
-			'panelTitle.activeForeground': '#0D3A58',
-			'panelTitle.inactiveForeground': '#6d8996',
+			'panel.border': o.colors.primary,
+			'panelTitle.activeBorder': o.colors.primary,
+			'panelTitle.activeForeground': o.colors.primary,
+			'panelTitle.inactiveForeground': o.colors.background,
 
-			'editor.findMatchBackground': o.colors.objectkeys,
-			'editor.findMatchBorder': '#0D3A58',
-			'editor.findMatchHighlightBackground': '#0f64e471',
-			'editor.findMatchHighlightBorder': o.colors.selection,
-			'editor.selectionBackground': o.colors.selection,
+			'editor.findMatchBackground': o.colors.green,
+			'editor.findMatchBorder': o.colors.primary,
+			'editor.findMatchHighlightBackground': o.colors.background + '2f',
+			'editor.findMatchHighlightBorder': o.colors.secondary,
+			'editor.selectionBackground': o.colors.primary + '1f',
 			// "editorBracketMatch.border": "#29e2e2",
-			'editor.selectionHighlightBackground': '#3f51b588',
-			'editorIndentGuide.activeBackground': '#929000',
+			'editor.selectionHighlightBackground': o.colors.accent + '1f',
+			'editorIndentGuide.activeBackground': o.colors.check,
 			// This section is for testing cobalt
 			//
 			// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L125-L135
 			'input.background': o.colors.background, //search bar color
-			'input.border': '#0D3A58', //search bar border
-			'input.foreground': o.colors.strings,
-			'input.placeholderForeground': '#aaa',
-			'inputOption.activeBorder': o.colors.classname,
-			'inputValidation.errorBackground': '#193549',
-			'inputValidation.errorBorder': '#0D3A58',
-			'inputValidation.infoBackground': '#193549',
-			'inputValidation.infoBorder': '#0D3A58',
-			'inputValidation.warningBackground': '#193549',
-			'inputValidation.warningBorder': '#ffc600',
-			'selection.background': '#b4004e',
+			'input.border': o.colors.accent, //search bar border
+			'input.foreground': o.colors.primary,
+			'input.placeholderForeground': o.colors.foreground,
+			'inputOption.activeBorder': o.colors.red,
+			'inputValidation.errorBackground': o.colors.red + '2f',
+			'inputValidation.errorBorder': o.colors.red,
+			'inputValidation.infoBackground': o.colors.check,
+			'inputValidation.infoBorder': o.colors.accent,
+			'inputValidation.warningBackground': o.colors.yellow + '2f',
+			'inputValidation.warningBorder': o.colors.yellow,
+			'selection.background': o.colors.secondary + '2f',
 			// Git status colors in File Explorer
 			// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L248-L253
-			'gitDecoration.modifiedResourceForeground': o.colors.strings,
-			'gitDecoration.deletedResourceForeground': o.colors.controlflow,
-			'gitDecoration.untrackedResourceForeground': o.colors.classname,
-			'gitDecoration.ignoredResourceForeground': o.colors.controlflow,
-			'gitDecoration.conflictingResourceForeground': o.colors.controlflow,
+			'gitDecoration.modifiedResourceForeground': o.colors.primary,
+			'gitDecoration.deletedResourceForeground': o.colors.other.orange,
+			'gitDecoration.untrackedResourceForeground': o.colors.red,
+			'gitDecoration.ignoredResourceForeground': o.colors.other.orange,
+			'gitDecoration.conflictingResourceForeground': o.colors.other.orange,
 			// activityBar
 			// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L6-L12
-			'activityBar.border': '#0D3A58', //sidebar border
-			'activityBar.dropBackground': '#0d3a58',
-			'activityBar.foreground': '#fff',
+			'activityBar.border': o.colors.primary, //sidebar border
+			'activityBar.dropBackground': o.colors.accent,
+			'activityBar.foreground': o.colors.foreground,
 			'activityBarBadge.foreground': '#000',
-			'activityBarBadge.background': o.colors.strings,
-			'activityBar.inactiveForeground': '#6f7683',
+			'activityBarBadge.background': o.colors.primary,
+			'activityBar.inactiveForeground': o.colors.check,
 			'activityBar.background': o.colors.background,
 			// badge
 			// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L13-L15
-			'badge.background': '#ffc600',
-			'badge.foreground': '#000',
+			'badge.background': o.colors.secondary,
+			'badge.foreground': o.colors.primary,
 			// button
-			'button.background': '#0088ff',
-			'button.foreground': '#fff',
-			'button.hoverBackground': '#ff9d00',
+			'button.background': o.colors.check,
+			'button.foreground': o.colors.primary,
+			'button.hoverBackground': o.colors.check,
 			// contrast
 			// "contrastActiveBorder": null,
-			contrastBorder: '#ffffff00',
+			'contrastBorder': o.colors.check + '00',
 			// debug
-			'debugExceptionWidget.background': '#193549',
-			'debugExceptionWidget.border': '#aaa',
-			'debugToolBar.background': '#193549',
+			'debugExceptionWidget.background': o.colors.check,
+			'debugExceptionWidget.border': o.colors.foreground,
+			'debugToolBar.background': o.colors.check,
 			// description
-			descriptionForeground: '#aaa',
+			descriptionForeground: o.colors.foreground,
 			// diff
-			'diffEditor.insertedTextBackground': '#3ad90033',
-			'diffEditor.insertedTextBorder': '#3ad90055',
-			'diffEditor.removedTextBackground': '#ee3a4333',
-			'diffEditor.removedTextBorder': '#ee3a4355',
+			'diffEditor.insertedTextBackground': o.colors.green + '33',
+			'diffEditor.insertedTextBorder': o.colors.green + '55',
+			'diffEditor.removedTextBackground': o.colors.red + '33',
+			'diffEditor.removedTextBorder': o.colors.red + '55',
 			// dropdown
-			'dropdown.background': '#193549', // output window
-			'dropdown.border': '#15232d',
-			'dropdown.foreground': '#fff',
-			// "editor.hoverHighlightBackground": "#ffc60033",
-			'editor.inactiveSelectionBackground': '#193549',
+			'dropdown.background': o.colors.check, // output window
+			'dropdown.border': o.colors.check,
+			'dropdown.foreground': o.colors.foreground,
+			'editor.inactiveSelectionBackground': o.colors.check,
 			// current line styles
-			'editor.lineHighlightBackground': '#000000',
-			'editor.lineHighlightBorder': '#0D3A58',
-			//    "editor.rangeHighlightBackground": "#1F4662",
+			'editor.lineHighlightBackground': o.colors.background + 'ff',
+			'editor.lineHighlightBorder': o.colors.blue,
 			// and this one is the rest of them
-			'editor.wordHighlightBackground': '#7ce1ee33',
-			'editorBracketMatch.background': '#0d3a58',
-			'editorBracketMatch.border': '#ffc60080',
-			'editorCodeLens.foreground': '#aaa',
-			'editorCursor.foreground': '#ffc600',
+			'editor.wordHighlightBackground': o.colors.check + '33',
+			'editorBracketMatch.background': o.colors.accent,
+			'editorBracketMatch.border': o.colors.check = '80',
+			'editorCodeLens.foreground': o.colors.foreground,
+			'editorCursor.foreground': o.colors.check,
 			// "editorError.border": "#0d3a58",
-			// "editorError.foreground": "#A22929",
 			// gutter
 			'editorGutter.background': o.colors.background,
-			'editorGutter.addedBackground': '#99ffee8a',
-			'editorGutter.deletedBackground': o.colors.red.a,
-			'editorGutter.modifiedBackground': '#568beed2',
+			'editorGutter.addedBackground': o.colors.green + '8a',
+			'editorGutter.deletedBackground': o.colors.red,
+			'editorGutter.modifiedBackground': o.colors.yellow + 'd2',
 			// editorGroup
-			// "editorGroup.background": "#A22929",
-			'editorGroup.border': '#122738',
-			'editorGroup.dropBackground': '#12273899',
+			'editorGroup.border': o.colors.check,
+			'editorGroup.dropBackground': o.colors.check + '99',
 			// editorHoverWidget
-			'editorHoverWidget.background': '#15232d',
-			'editorHoverWidget.border': '#0d3a58',
-			'editorIndentGuide.background': '#3B5364',
-			'editorLineNumber.foreground': '#aaa',
-			'editorLineNumber.activeForeground': '#ffc600',
-			'editorLink.activeForeground': '#aaa',
+			'editorHoverWidget.background': o.colors.check,
+			'editorHoverWidget.border': o.colors.accent,
+			'editorIndentGuide.background': o.colors.check,
+			'editorLineNumber.foreground': o.colors.foreground,
+			'editorLineNumber.activeForeground': o.colors.check,
+			'editorLink.activeForeground': o.colors.foreground,
 			// editorMarkerNavigation
-			'editorMarkerNavigation.background': '#3B536433',
-			'editorMarkerNavigationError.background': '#A22929',
-			'editorMarkerNavigationWarning.background': '#ffc600',
+			'editorMarkerNavigation.background': o.colors.check + '33',
+			'editorMarkerNavigationError.background': o.colors.check,
+			'editorMarkerNavigationWarning.background': o.colors.check,
 			// ruler
-			'editorOverviewRuler.border': '#0d3a58',
-			'editorOverviewRuler.commonContentForeground': '#ffc60055',
-			'editorOverviewRuler.currentContentForeground': '#ee3a4355',
-			'editorOverviewRuler.incomingContentForeground': '#3ad90055',
-			'editorRuler.foreground': '#1F4662',
-			'editorSuggestWidget.background': '#01132e', //"#15232d", //autocomplete intellisense backgroun
-			'editorSuggestWidget.border': '#15232d',
-			'editorSuggestWidget.foreground': '#aaa',
-			'editorSuggestWidget.highlightForeground': '#ffc600',
-			'editorSuggestWidget.selectedBackground': '#193549',
+			'editorOverviewRuler.border': o.colors.accent,
+			'editorOverviewRuler.commonContentForeground': o.colors.check + '55',
+			'editorOverviewRuler.currentContentForeground': o.colors.check + '55',
+			'editorOverviewRuler.incomingContentForeground': o.colors.check + '55',
+			'editorRuler.foreground': o.colors.check,
+			'editorSuggestWidget.background': o.colors.check, //"#15232d", //autocomplete intellisense backgroun
+			'editorSuggestWidget.border': o.colors.check,
+			'editorSuggestWidget.foreground': o.colors.foreground,
+			'editorSuggestWidget.highlightForeground': o.colors.check,
+			'editorSuggestWidget.selectedBackground': o.colors.check,
 			// editorWarning
-			'editorWarning.border': '#ffffff00',
-			'editorWarning.foreground': '#ffc600',
-			'editorWhitespace.foreground': '#ffffff1a',
-			'editorWidget.background': '#15232d',
-			'editorWidget.border': '#0d3a58',
-			errorForeground: '#A22929',
+			'editorWarning.border': o.colors.check + '00',
+			'editorWarning.foreground': o.colors.check,
+			'editorWhitespace.foreground': o.colors.check + '1a',
+			'editorWidget.background': o.colors.check,
+			'editorWidget.border': o.colors.accent,
+			errorForeground: o.colors.check,
 			// error squiggles
-			'editorError.foreground': '#ff0000',
-			'editorError.border': o.colors.red.a,
+			'editorError.foreground': o.colors.check,
+			'editorError.border': o.colors.red,
 			// extensionButton
-			'extensionButton.prominentBackground': '#0088ff',
-			'extensionButton.prominentForeground': '#fff',
-			'extensionButton.prominentHoverBackground': '#ff9d00',
-			focusBorder: '#0d3a58',
-			foreground: '#aaa',
-			'list.activeSelectionBackground': '#193549',
-			'list.activeSelectionForeground': '#fff',
-			'list.dropBackground': '#0d3a58',
-			'list.focusBackground': '#0d3a58',
-			'list.focusForeground': o.colors.strings, //command pallette active selection text
-			'list.highlightForeground': o.colors.controlflow,
-			'list.hoverBackground': '#193549',
-			'list.hoverForeground': '#aaa',
-			'list.inactiveSelectionBackground': '#0d3a58',
-			'list.inactiveSelectionForeground': '#aaa',
+			'extensionButton.prominentBackground': o.colors.background,
+			'extensionButton.prominentForeground': o.colors.foreground,
+			'extensionButton.prominentHoverBackground': o.colors.primary,
+			focusBorder: o.colors.accent,
+			foreground: o.colors.foreground,
+			'list.activeSelectionBackground': o.colors.primary,
+			'list.activeSelectionForeground': o.colors.background,
+			'list.inactiveSelectionBackground': o.colors.primary + '5f',
+			'list.inactiveSelectionForeground': o.colors.background,
+			'list.dropBackground': o.colors.background,
+			'list.focusBackground': o.colors.accent,
+			'list.focusForeground': o.colors.primary, //command pallette active selection text
+			'list.highlightForeground': o.colors.primary,
+			'list.hoverBackground': o.colors.primary + '1f',
+			'list.hoverForeground': o.colors.background,
 			// merge
-			'merge.border': '#ffffff00',
-			'merge.commonContentBackground': '#c97d0c',
-			'merge.commonHeaderBackground': '#c97d0c',
-			'merge.currentContentBackground': '#2F7366',
-			'merge.currentHeaderBackground': '#2F7366',
-			'merge.incomingContentBackground': '#185294',
-			'merge.incomingHeaderBackground': '#185294',
+			'merge.border': o.colors.primary + '00',
+			'merge.commonContentBackground': o.colors.check,
+			'merge.commonHeaderBackground': o.colors.check,
+			'merge.currentContentBackground': o.colors.check,
+			'merge.currentHeaderBackground': o.colors.check,
+			'merge.incomingContentBackground': o.colors.check,
+			'merge.incomingHeaderBackground': o.colors.check,
 
 			// "peekView
-			'peekView.border': '#0D3A58',
-			'peekViewEditor.background': '#193549',
-			'peekViewEditor.matchHighlightBackground': '#19354900',
-			'peekViewEditorGutter.background': '#122738',
-			'peekViewEditor.matchHighlightBorder': '#ff0000',
-			'peekViewResult.background': '#15232d',
-			'peekViewResult.fileForeground': '#aaa',
-			'peekViewResult.lineForeground': '#fff',
-			'peekViewResult.matchHighlightBackground': '#0d3a58',
-			'peekViewResult.selectionBackground': '#0d3a58',
-			'peekViewResult.selectionForeground': '#fff',
-			'peekViewTitle.background': '#15232d',
-			'peekViewTitleDescription.foreground': '#aaa',
-			'peekViewTitleLabel.foreground': '#ffc600',
+			'peekView.border': o.colors.accent,
+			'peekViewEditor.background': o.colors.check,
+			'peekViewEditor.matchHighlightBackground': o.colors.check + '00',
+			'peekViewEditorGutter.background': o.colors.check,
+			'peekViewEditor.matchHighlightBorder': o.colors.check,
+			'peekViewResult.background': o.colors.check,
+			'peekViewResult.fileForeground': o.colors.foreground,
+			'peekViewResult.lineForeground': o.colors.foreground,
+			'peekViewResult.matchHighlightBackground': o.colors.accent,
+			'peekViewResult.selectionBackground': o.colors.accent,
+			'peekViewResult.selectionForeground': o.colors.foreground,
+			'peekViewTitle.background': o.colors.check,
+			'peekViewTitleDescription.foreground': o.colors.foreground,
+			'peekViewTitleLabel.foreground': o.colors.check,
 			// picker
-			'pickerGroup.foreground': o.colors.functions,
-			'pickerGroup.border': '#ffe033',
+			'pickerGroup.foreground': o.colors.blue,
+			'pickerGroup.border': o.colors.check,
 			// progressBar
-			'progressBar.background': '#ffc600',
+			'progressBar.background': o.colors.check,
 			// scrollbar
 			'scrollbar.shadow': '#00000000',
-			'scrollbarSlider.activeBackground': '#ff1313cc',
-			'scrollbarSlider.background': '#8ef8cc7a', //"#1F466280", //scrollbar block
-			'scrollbarSlider.hoverBackground': '#406179cc',
+			'scrollbarSlider.activeBackground': o.colors.green + 'cc',
+			'scrollbarSlider.background': o.colors.primary + '7a', //"#1F466280", //scrollbar block
+			'scrollbarSlider.hoverBackground': o.colors.blue + 'cc',
 			// sidebar
 			// "activityBar.inactiveForeground": "#ff0000",
-			'sideBar.border': '#0d3a58', //sidebar border
-			'sideBar.foreground': '#aaa',
-			'sideBarSectionHeader.foreground': '#aaaaaa',
-			'sideBarTitle.foreground': '#bbbbbb',
+			'sideBar.border': o.colors.primary, //sidebar border
 			'sideBar.background': o.colors.background,
-			'sideBar.dropBackground': o.colors.classname,
-			'sideBarSectionHeader.border': '#0D3A58',
-			'sideBarSectionHeader.background': '#010135',
+			'sideBar.foreground': o.colors.primary,
+			'sideBarTitle.foreground': o.colors.primary,
+			'sidebarTitle.background': o.colors.background,
+			'sideBar.dropBackground': o.colors.check,
+			'sideBarSectionHeader.border': o.colors.primary,
+			'sideBarSectionHeader.foreground': o.colors.background, //?
+			'sideBarSectionHeader.background': o.colors.primary, //?
 			// statusBar
-			'statusBar.background': '#15232d',
-			'statusBar.border': '#fff0a6',
-			'statusBar.debuggingBackground': '#ffc600',
-			'statusBar.debuggingForeground': '#15232d',
-			'statusBar.foreground': '#aaa',
-			'statusBar.noFolderBackground': '#15232d',
-			'statusBar.noFolderForeground': '#aaa',
-			'statusBarItem.activeBackground': '#0088ff',
+			'statusBar.foreground': o.colors.background, //?
+			'statusBar.background': o.colors.primary, //?
+			'statusBar.border': o.colors.secondary,
+			'statusBar.debuggingBackground': o.colors.check,
+			'statusBar.debuggingForeground': o.colors.check,
+			'statusBar.noFolderBackground': o.colors.check,
+			'statusBar.noFolderForeground': o.colors.foreground,
+			'statusBarItem.activeBackground': o.colors.check,
 			// "statusBarItem.hoverBackground": "#0d3a58",
-			'statusBarItem.prominentBackground': '#15232d',
-			'statusBarItem.prominentHoverBackground': '#0d3a58',
+			'statusBarItem.prominentBackground': o.colors.check,
+			'statusBarItem.prominentHoverBackground': o.colors.accent,
 			// tab
 			'tab.activeBackground': o.colors.background,
-			'tab.activeForeground': o.colors.classname,
+			'tab.activeForeground': o.colors.primary,
 			'tab.border': o.colors.background,
-			'tab.activeBorder': o.colors.classname,
-			'tab.inactiveBackground': '#193549',
-			'tab.inactiveForeground': '#aaa',
-			'tab.unfocusedActiveForeground': '#aaa',
-			'tab.unfocusedInactiveForeground': '#aaa',
+			'tab.activeBorder': o.colors.red,
+			'tab.inactiveBackground': o.colors.background,
+			'tab.inactiveForeground': o.colors.foreground,
+			'tab.unfocusedActiveForeground': o.colors.foreground,
+			'tab.unfocusedInactiveForeground': o.colors.foreground,
 			// --- workbench: terminal
-			'terminal.ansiBlack': '#000000',
-			'terminal.ansiRed': '#ff628c',
-			'terminal.ansiGreen': '#3ad900',
-			'terminal.ansiYellow': '#ffc600',
-			'terminal.ansiBlue': '#0088ff',
-			'terminal.ansiMagenta': '#fb94ff',
-			'terminal.ansiCyan': '#80fcff',
-			'terminal.ansiWhite': '#ffffff',
-			'terminal.ansiBrightBlack': '#0050A4',
-			'terminal.ansiBrightRed': '#ff628c',
-			'terminal.ansiBrightGreen': '#3ad900',
-			'terminal.ansiBrightYellow': '#ffc600',
-			'terminal.ansiBrightBlue': '#0088ff',
-			'terminal.ansiBrightMagenta': '#fb94ff',
-			'terminal.ansiBrightCyan': '#80fcff',
-			'terminal.ansiBrightWhite': '#193549',
-			'terminal.background': '#000000',
-			'terminal.foreground': '#ffffff',
-			'terminalCursor.background': '#ffc600',
-			'terminalCursor.foreground': '#ffc600',
-			'terminal.selectionBackground': '#006164a4',
+			'terminal.ansiBlack': o.colors.check,
+			'terminal.ansiRed': o.colors.check,
+			'terminal.ansiGreen': o.colors.check,
+			'terminal.ansiYellow': o.colors.check,
+			'terminal.ansiBlue': o.colors.check,
+			'terminal.ansiMagenta': o.colors.check,
+			'terminal.ansiCyan': o.colors.check,
+			'terminal.ansiWhite': o.colors.check,
+			'terminal.ansiBrightBlack': o.colors.check,
+			'terminal.ansiBrightRed': o.colors.check,
+			'terminal.ansiBrightGreen': o.colors.check,
+			'terminal.ansiBrightYellow': o.colors.check,
+			'terminal.ansiBrightBlue': o.colors.check,
+			'terminal.ansiBrightMagenta': o.colors.check,
+			'terminal.ansiBrightCyan': o.colors.check,
+			'terminal.ansiBrightWhite': o.colors.check,
+			'terminal.background': o.colors.check,
+			'terminal.foreground': o.colors.check,
+			'terminalCursor.background': o.colors.check,
+			'terminalCursor.foreground': o.colors.check,
+			'terminal.selectionBackground': o.colors.foreground + 'a4',
 			// textBlockQuote
-			'textBlockQuote.background': '#193549',
-			'textBlockQuote.border': '#0088ff',
-			'textCodeBlock.background': '#193549',
-			'textLink.activeForeground': '#0088ff',
-			'textLink.foreground': '#0088ff',
-			'textPreformat.foreground': '#ffc600',
-			'textSeparator.foreground': '#0d3a58',
-			'titleBar.activeBackground': '#15232D',
-			'titleBar.activeForeground': '#ffffff',
-			'titleBar.inactiveBackground': '#193549',
-			'titleBar.inactiveForeground': '#ffffff33',
-			'walkThrough.embeddedEditorBackground': '#0d3a58',
-			'welcomePage.buttonBackground': '#193549',
-			'welcomePage.buttonHoverBackground': '#0d3a58',
+			'textBlockQuote.background': o.colors.check,
+			'textBlockQuote.border': o.colors.check,
+			'textCodeBlock.background': o.colors.check,
+			'textLink.activeForeground': o.colors.check,
+			'textLink.foreground': o.colors.check,
+			'textPreformat.foreground': o.colors.check,
+			'textSeparator.foreground': o.colors.accent,
+			'titleBar.activeBackground': o.colors.check,
+			'titleBar.activeForeground': o.colors.check,
+			'titleBar.inactiveBackground': o.colors.check,
+			'titleBar.inactiveForeground': o.colors.foreground + '33',
+			'walkThrough.embeddedEditorBackground': o.colors.accent,
+			'welcomePage.buttonBackground': o.colors.check,
+			'welcomePage.buttonHoverBackground': o.colors.accent,
 			'widget.shadow': '#00000026',
 		},
 		tokenColors: [
 			{
 				scope: ['keyword.operator.type', 'keyword.operator.logical'],
 				settings: {
-					foreground: o.colors.exportbool,
+					foreground: o.colors.red,
 					fontStyle: '',
 				},
 			},
 			{
 				scope: ['keyword.control.conditional'],
 				settings: {
-					foreground: o.colors.conditional,
+					foreground: o.colors.other.orange,
 					fontStyle: '',
 				},
 			},
 			{
 				scope: ['entity.name.type.class'],
 				settings: {
-					foreground: o.colors.classname,
+					foreground: o.colors.red,
 					fontStyle: 'italic',
 				},
 			},
 			{
 				scope: ['variable.parameter'],
 				settings: {
-					foreground: o.colors.arguments,
+					foreground: o.colors.green,
 					fontStyle: 'italic',
 				},
 			},
 			{
 				scope: ['constant.language.boolean'],
 				settings: {
-					foreground: o.colors.exportbool,
+					foreground: o.colors.red,
 					fontStyle: '',
 				},
 			},
@@ -301,27 +297,27 @@ export const template = (o: Options) => {
 					'punctuation.definition.template-expression.end',
 				],
 				settings: {
-					foreground: o.colors.functions,
+					foreground: o.colors.blue,
 				},
 			},
 			{
 				scope: ['keyword.control.export'],
 				settings: {
-					foreground: o.colors.exportbool,
+					foreground: o.colors.red,
 					fontStyle: 'italic',
 				},
 			},
 			{
-				scope: ['support.variable.object', 'support.variable.property'],
+				scope: ['support.variable'],
 				settings: {
-					foreground: o.colors.types,
+					foreground: o.colors.cyan,
 					fontStyle: 'italic',
 				},
 			},
 			{
 				scope: ['entity.name.tag.yaml'],
 				settings: {
-					foreground: o.colors.functions,
+					foreground: o.colors.blue,
 					fontStyle: 'italic',
 				},
 			},
@@ -330,51 +326,55 @@ export const template = (o: Options) => {
 				scope: ['comment', 'punctuation.definition.comment'],
 				settings: {
 					fontStyle: 'italic',
-					foreground: '#6d8996',
+					foreground: o.colors.check,
 				},
 			},
 			{
 				name: 'Variables',
-				scope: ['variable.other.assignment', 'variable', 'string constant.other.placeholder'],
+				scope: [
+					'variable.other.assignment',
+					'variable',
+					'string constant.other.placeholder',
+				],
 				settings: {
-					foreground: o.colors.variables,
+					foreground: o.colors.cyan,
 				},
 			},
 			{
 				name: 'Colors',
 				scope: ['constant.other.color'],
 				settings: {
-					foreground: '#ffffff',
+					foreground: o.colors.check,
 				},
 			},
 			{
 				name: 'Invalid',
 				scope: ['invalid', 'invalid.illegal'],
 				settings: {
-					foreground: o.colors.red.a,
+					foreground: o.colors.red,
 				},
 			},
 			{
 				name: 'Keyword, Storage',
 				scope: ['storage.type', 'storage.modifier', 'keyword'],
 				settings: {
-					foreground: o.colors.expression,
+					foreground: o.colors.cyan,
 					fontStyle: 'italic',
 				},
 			},
 			{
 				scope: ['keyword.operator'],
 				settings: {
-					foreground: o.colors.orange.a,
-					fontStyle: ''
-				}
+					foreground: o.colors.other.orange,
+					fontStyle: '',
+				},
 			},
 			{
 				scope: ['keyword.control'],
 				settings: {
-					foreground: o.colors.controlflow,
-					fontStyle: 'bold'
-				}
+					foreground: o.colors.other.orange,
+					fontStyle: 'bold',
+				},
 			},
 			{
 				name: 'Operator, Misc',
@@ -384,6 +384,7 @@ export const template = (o: Options) => {
 					'meta.tag',
 					'punctuation.definition.tag',
 					'punctuation.separator.inheritance.php',
+					'punctuation.separator',
 					'punctuation.definition.tag.html',
 					'punctuation.definition.tag.begin.html',
 					'punctuation.definition.tag.end.html',
@@ -392,8 +393,8 @@ export const template = (o: Options) => {
 					'keyword.other.substitution',
 				],
 				settings: {
-					foreground: o.colors.controlflow,
-					fontStyle: 'italic',
+					foreground: o.colors.other.orange,
+					// fontStyle: 'italic',
 				},
 			},
 			{
@@ -404,7 +405,7 @@ export const template = (o: Options) => {
 					'markup.deleted.git_gutter',
 				],
 				settings: {
-					foreground: o.colors.objectkeys,
+					foreground: o.colors.green,
 				},
 			},
 			{
@@ -417,7 +418,7 @@ export const template = (o: Options) => {
 					'keyword.other.special-method',
 				],
 				settings: {
-					foreground: o.colors.functions,
+					foreground: o.colors.blue,
 				},
 			},
 			{
@@ -431,7 +432,7 @@ export const template = (o: Options) => {
 				name: 'Other Variable, String Link',
 				scope: ['support.other.variable', 'string.other.link'],
 				settings: {
-					foreground: o.colors.objectkeys,
+					foreground: o.colors.green,
 				},
 			},
 			{
@@ -452,7 +453,7 @@ export const template = (o: Options) => {
 			{
 				name: 'String, Symbols, Inherited Class, Markup Heading',
 				scope: [
-					'string',
+					'string.quoted',
 					'constant.other.symbol',
 					'constant.other.key',
 					'entity.other.inherited-class',
@@ -462,14 +463,14 @@ export const template = (o: Options) => {
 					'string.quoted.double.json',
 				],
 				settings: {
-					foreground: o.colors.strings,
+					foreground: o.colors.primary,
 				},
 			},
 			{
 				scope: ['support.class.builtin', 'entity.name.type'],
 				settings: {
-					foreground: o.colors.blue.a
-				}
+					foreground: o.colors.blue,
+				},
 			},
 			{
 				name: 'Class, Support',
@@ -484,14 +485,14 @@ export const template = (o: Options) => {
 					'support.type.sys-types',
 				],
 				settings: {
-					foreground: o.colors.types,
+					foreground: o.colors.yellow,
 				},
 			},
 			{
 				name: 'Entity Types',
 				scope: ['support.type'],
 				settings: {
-					foreground: '#B2CCD6',
+					foreground: o.colors.check,
 				},
 			},
 			{
@@ -505,7 +506,7 @@ export const template = (o: Options) => {
 					'source.postcss support.type.property-name',
 				],
 				settings: {
-					foreground: '#B2CCD6',
+					foreground: o.colors.check,
 				},
 			},
 			{
@@ -516,7 +517,7 @@ export const template = (o: Options) => {
 					'variable.other.class.js',
 				],
 				settings: {
-					foreground: '#f8bbd0',
+					foreground: o.colors.check,
 				},
 			},
 			{
@@ -524,7 +525,7 @@ export const template = (o: Options) => {
 				scope: ['variable.language'],
 				settings: {
 					fontStyle: 'italic',
-					foreground: '#f8bbd0',
+					foreground: o.colors.check,
 				},
 			},
 			{
@@ -532,7 +533,7 @@ export const template = (o: Options) => {
 				scope: ['entity.name.method.js'],
 				settings: {
 					fontStyle: 'italic',
-					foreground: '#74dff5',
+					foreground: o.colors.check,
 				},
 			},
 			{
@@ -542,66 +543,64 @@ export const template = (o: Options) => {
 					'variable.function.constructor',
 				],
 				settings: {
-					foreground: o.colors.types,
+					foreground: o.colors.yellow,
 				},
 			},
 			{
 				name: 'HTML Attributes',
-				scope: [
-					'entity.other.attribute-name',
-				],
+				scope: ['entity.other.attribute-name'],
 				settings: {
 					fontStyle: 'italic',
-					foreground: o.colors.blue.b,
+					foreground: o.colors.blue,
 				},
 			},
 			{
 				name: 'CSS Classes',
 				scope: ['entity.other.attribute-name.class'],
 				settings: {
-					foreground: '#fff0a6',
+					foreground: o.colors.check,
 				},
 			},
 			{
 				name: "CSS ID's",
 				scope: ['source.sass keyword.control'],
 				settings: {
-					foreground: '#74dff5',
+					foreground: o.colors.check,
 				},
 			},
 			{
 				name: 'Inserted',
 				scope: ['markup.inserted'],
 				settings: {
-					foreground: '#C3E88D',
+					foreground: o.colors.check,
 				},
 			},
 			{
 				name: 'Deleted',
 				scope: ['markup.deleted'],
 				settings: {
-					foreground: '#f8bbd0',
+					foreground: o.colors.check,
 				},
 			},
 			{
 				name: 'Changed',
 				scope: ['markup.changed'],
 				settings: {
-					foreground: o.colors.green.a,
+					foreground: o.colors.green,
 				},
 			},
 			{
 				name: 'Regular Expressions',
 				scope: ['string.regexp'],
 				settings: {
-					foreground: o.colors.regex?.blue || '#89DDFF',
+					foreground: o.colors.blue || o.colors.check,
 				},
 			},
 			{
 				name: 'Escape Characters',
 				scope: ['constant.character.escape'],
 				settings: {
-					foreground: o.colors.regex?.blue || '#89DDFF',
+					foreground: o.colors.blue || o.colors.check,
 				},
 			},
 			{
@@ -619,7 +618,7 @@ export const template = (o: Options) => {
 				],
 				settings: {
 					fontStyle: 'italic',
-					foreground: '#74dff5',
+					foreground: o.colors.check,
 				},
 			},
 			{
@@ -629,7 +628,7 @@ export const template = (o: Options) => {
 				],
 				settings: {
 					fontStyle: 'italic',
-					foreground: '#f8bbd0',
+					foreground: o.colors.check,
 				},
 			},
 			{
@@ -638,7 +637,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json',
 				],
 				settings: {
-					foreground: '#f48fb1',
+					foreground: o.colors.check,
 				},
 			},
 			{
@@ -647,7 +646,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: o.colors.classname,
+					foreground: o.colors.red,
 				},
 			},
 			{
@@ -656,7 +655,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: o.colors.functions,
+					foreground: o.colors.blue,
 				},
 			},
 			{
@@ -665,7 +664,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: '#daf381',
+					foreground: o.colors.check,
 				},
 			},
 			{
@@ -674,7 +673,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: '#97efff',
+					foreground: o.colors.check,
 				},
 			},
 			{
@@ -683,7 +682,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: '#C17E70',
+					foreground: o.colors.check,
 				},
 			},
 			{
@@ -692,7 +691,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: '#74dff5',
+					foreground: o.colors.check,
 				},
 			},
 			{
@@ -701,7 +700,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: o.colors.objectkeys,
+					foreground: o.colors.green,
 				},
 			},
 			{
@@ -710,7 +709,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: o.colors.green.a,
+					foreground: o.colors.green,
 				},
 			},
 			{
@@ -719,180 +718,180 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: '#C3E88D',
+					foreground: o.colors.check,
 				},
 			},
-			{
-				name: 'Markdown - Plain',
-				scope: [
-					'text.html.markdown',
-					'punctuation.definition.list_item.markdown',
-				],
-				settings: {
-					foreground: '#EEFFFF',
-				},
-			},
-			{
-				name: 'Markdown - Markup Raw Inline',
-				scope: ['text.html.markdown markup.inline.raw.markdown'],
-				settings: {
-					foreground: o.colors.green.a,
-				},
-			},
-			{
-				name: 'Markdown - Markup Raw Inline Punctuation',
-				scope: [
-					'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
-				],
-				settings: {
-					foreground: '#65737E',
-				},
-			},
-			{
-				name: 'Markdown - Heading',
-				scope: [
-					'markdown.heading',
-					'markup.heading | markup.heading entity.name',
-					'markup.heading.markdown punctuation.definition.heading.markdown',
-				],
-				settings: {
-					foreground: '#C3E88D',
-				},
-			},
-			{
-				name: 'Markup - Italic',
-				scope: ['markup.italic'],
-				settings: {
-					fontStyle: 'italic',
-					foreground: o.colors.objectkeys,
-				},
-			},
-			{
-				name: 'Markup - Bold',
-				scope: ['markup.bold', 'markup.bold string'],
-				settings: {
-					fontStyle: 'bold',
-					foreground: o.colors.objectkeys,
-				},
-			},
-			{
-				name: 'Markup - Bold-Italic',
-				scope: [
-					'markup.bold markup.italic',
-					'markup.italic markup.bold',
-					'markup.quote markup.bold',
-					'markup.bold markup.italic string',
-					'markup.italic markup.bold string',
-					'markup.quote markup.bold string',
-				],
-				settings: {
-					fontStyle: 'bold',
-					foreground: o.colors.objectkeys,
-				},
-			},
-			{
-				name: 'Markup - Underline',
-				scope: ['markup.underline'],
-				settings: {
-					fontStyle: 'underline',
-					foreground: o.colors.types,
-				},
-			},
-			{
-				name: 'Markdown - Blockquote',
-				scope: ['markup.quote punctuation.definition.blockquote.markdown'],
-				settings: {
-					foreground: '#65737E',
-				},
-			},
-			{
-				name: 'Markup - Quote',
-				scope: ['markup.quote'],
-				settings: {
-					fontStyle: 'italic',
-				},
-			},
-			{
-				name: 'Markdown - Link',
-				scope: ['string.other.link.title.markdown'],
-				settings: {
-					foreground: '#74dff5',
-				},
-			},
-			{
-				name: 'Markdown - Link Description',
-				scope: ['string.other.link.description.title.markdown'],
-				settings: {
-					foreground: o.colors.green.a,
-				},
-			},
-			{
-				name: 'Markdown - Link Anchor',
-				scope: ['constant.other.reference.link.markdown'],
-				settings: {
-					foreground: '#fff0a6',
-				},
-			},
-			{
-				name: 'Markup - Raw Block',
-				scope: ['markup.raw.block'],
-				settings: {
-					foreground: o.colors.green.a,
-				},
-			},
-			{
-				name: 'Markdown - Raw Block Fenced',
-				scope: ['markup.raw.block.fenced.markdown'],
-				settings: {
-					foreground: '#00000050',
-				},
-			},
-			{
-				name: 'Markdown - Fenced Bode Block',
-				scope: ['punctuation.definition.fenced.markdown'],
-				settings: {
-					foreground: '#00000050',
-				},
-			},
-			{
-				name: 'Markdown - Fenced Bode Block Variable',
-				scope: [
-					'markup.raw.block.fenced.markdown',
-					'variable.language.fenced.markdown',
-					'punctuation.section.class.end',
-				],
-				settings: {
-					foreground: '#EEFFFF',
-				},
-			},
-			{
-				name: 'Markdown - Fenced Language',
-				scope: ['variable.language.fenced.markdown'],
-				settings: {
-					foreground: '#65737E',
-				},
-			},
-			{
-				name: 'Markdown - Separator',
-				scope: ['meta.separator'],
-				settings: {
-					fontStyle: 'bold',
-					foreground: '#65737E',
-				},
-			},
-			{
-				name: 'Markup - Table',
-				scope: ['markup.table'],
-				settings: {
-					foreground: '#EEFFFF',
-				},
-			},
+			// {
+			// 	name: 'Markdown - Plain',
+			// 	scope: [
+			// 		'text.html.markdown',
+			// 		'punctuation.definition.list_item.markdown',
+			// 	],
+			// 	settings: {
+			// 		foreground: o.colors.check,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markdown - Markup Raw Inline',
+			// 	scope: ['text.html.markdown markup.inline.raw.markdown'],
+			// 	settings: {
+			// 		foreground: o.colors.green,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markdown - Markup Raw Inline Punctuation',
+			// 	scope: [
+			// 		'text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown',
+			// 	],
+			// 	settings: {
+			// 		foreground: o.colors.check,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markdown - Heading',
+			// 	scope: [
+			// 		'markdown.heading',
+			// 		'markup.heading | markup.heading entity.name',
+			// 		'markup.heading.markdown punctuation.definition.heading.markdown',
+			// 	],
+			// 	settings: {
+			// 		foreground: o.colors.check,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markup - Italic',
+			// 	scope: ['markup.italic'],
+			// 	settings: {
+			// 		fontStyle: 'italic',
+			// 		foreground: o.colors.green,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markup - Bold',
+			// 	scope: ['markup.bold', 'markup.bold string'],
+			// 	settings: {
+			// 		fontStyle: 'bold',
+			// 		foreground: o.colors.green,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markup - Bold-Italic',
+			// 	scope: [
+			// 		'markup.bold markup.italic',
+			// 		'markup.italic markup.bold',
+			// 		'markup.quote markup.bold',
+			// 		'markup.bold markup.italic string',
+			// 		'markup.italic markup.bold string',
+			// 		'markup.quote markup.bold string',
+			// 	],
+			// 	settings: {
+			// 		fontStyle: 'bold',
+			// 		foreground: o.colors.green,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markup - Underline',
+			// 	scope: ['markup.underline'],
+			// 	settings: {
+			// 		fontStyle: 'underline',
+			// 		foreground: o.colors.yellow,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markdown - Blockquote',
+			// 	scope: ['markup.quote punctuation.definition.blockquote.markdown'],
+			// 	settings: {
+			// 		foreground: o.colors.primary,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markup - Quote',
+			// 	scope: ['markup.quote'],
+			// 	settings: {
+			// 		fontStyle: 'italic',
+			// 	},
+			// },
+			// {
+			// 	name: 'Markdown - Link',
+			// 	scope: ['string.other.link.title.markdown'],
+			// 	settings: {
+			// 		foreground: o.colors.check,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markdown - Link Description',
+			// 	scope: ['string.other.link.description.title.markdown'],
+			// 	settings: {
+			// 		foreground: o.colors.green,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markdown - Link Anchor',
+			// 	scope: ['constant.other.reference.link.markdown'],
+			// 	settings: {
+			// 		foreground: o.colors.check,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markup - Raw Block',
+			// 	scope: ['markup.raw.block'],
+			// 	settings: {
+			// 		foreground: o.colors.green,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markdown - Raw Block Fenced',
+			// 	scope: ['markup.raw.block.fenced.markdown'],
+			// 	settings: {
+			// 		foreground: '#00000050',
+			// 	},
+			// },
+			// {
+			// 	name: 'Markdown - Fenced Bode Block',
+			// 	scope: ['punctuation.definition.fenced.markdown'],
+			// 	settings: {
+			// 		foreground: '#00000050',
+			// 	},
+			// },
+			// {
+			// 	name: 'Markdown - Fenced Bode Block Variable',
+			// 	scope: [
+			// 		'markup.raw.block.fenced.markdown',
+			// 		'variable.language.fenced.markdown',
+			// 		'punctuation.section.class.end',
+			// 	],
+			// 	settings: {
+			// 		foreground: o.colors.check,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markdown - Fenced Language',
+			// 	scope: ['variable.language.fenced.markdown'],
+			// 	settings: {
+			// 		foreground: o.colors.check,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markdown - Separator',
+			// 	scope: ['meta.separator'],
+			// 	settings: {
+			// 		fontStyle: 'bold',
+			// 		foreground: o.colors.check,
+			// 	},
+			// },
+			// {
+			// 	name: 'Markup - Table',
+			// 	scope: ['markup.table'],
+			// 	settings: {
+			// 		foreground: o.colors.check,
+			// 	},
+			// },
 			// go
 
 			{
 				scope: ['constant.other.placeholder.go'],
 				settings: {
-					foreground: o.colors.types,
+					foreground: o.colors.yellow,
 				},
 			},
 			// python
@@ -900,14 +899,14 @@ export const template = (o: Options) => {
 			{
 				scope: ['meta.item-access.python'],
 				settings: {
-					foreground: o.colors.types
-				}
+					foreground: o.colors.yellow,
+				},
 			},
 
 			{
-				scope: ['meta.function-call.arguments.python'],
+				scope: ['meta.function-call.green.python'],
 				settings: {
-					foreground: o.colors.types,
+					foreground: o.colors.yellow,
 				},
 			},
 
@@ -916,13 +915,13 @@ export const template = (o: Options) => {
 				scope: ['variable.language.special.self.python'],
 				settings: {
 					fontStyle: 'italic',
-					foreground: o.colors.python?.self || '#ffccbc',
+					foreground: o.colors.accent || o.colors.check,
 				},
 			},
 			{
 				scope: ['support.type.python'],
 				settings: {
-					foreground: o.colors.python?.type || '#a4eaf8',
+					foreground: o.colors.accent || o.colors.check,
 				},
 			},
 			{
@@ -930,7 +929,7 @@ export const template = (o: Options) => {
 				scope: ['string.quoted.docstring.multi.python'],
 				settings: {
 					fontStyle: 'italic',
-					foreground: '#6d8996',
+					foreground: o.colors.check,
 				},
 			},
 
@@ -938,7 +937,7 @@ export const template = (o: Options) => {
 			{
 				scope: ['entity.name.tag.other.html'],
 				settings: {
-					foreground: '#ffccbc',
+					foreground: o.colors.check,
 				},
 			},
 
@@ -946,13 +945,13 @@ export const template = (o: Options) => {
 			{
 				scope: ['support.function.builtin'],
 				settings: {
-					foreground: o.colors.green.a,
+					foreground: o.colors.green,
 				},
 			},
 			{
 				scope: ['meta.function-call.generic'],
 				settings: {
-					foreground: '#fffde7',
+					foreground: o.colors.check,
 				},
 			},
 
@@ -960,26 +959,26 @@ export const template = (o: Options) => {
 			{
 				scope: ['constant.character.set.regexp'],
 				settings: {
-					foreground: o.colors.types,
+					foreground: o.colors.yellow,
 				},
 			},
 			{
 				scope: ['constant.other.set.regexp'],
 				settings: {
-					foreground: o.colors.regex?.blue || '#6ff9ff',
+					foreground: o.colors.blue || o.colors.check,
 				},
 			},
 			{
 				scope: ['keyword.operator.quantifier.regexp'],
 				settings: {
-					foreground: o.colors.regex?.yellow || '#ffee58',
+					foreground: o.colors.yellow || o.colors.check,
 					fontStyle: '',
 				},
 			},
 			{
 				scope: ['constant.other.character-class.regexp'],
 				settings: {
-					foreground: o.colors.regex?.green || '#c6ff00',
+					foreground: o.colors.green || o.colors.check,
 					fontStyle: '',
 				},
 			},
@@ -992,14 +991,14 @@ export const template = (o: Options) => {
 					'keyword.operator.disjunction.regexp',
 				],
 				settings: {
-					foreground: o.colors.regex?.orange || '#ff7043',
+					foreground: o.colors.other.orange || o.colors.check,
 					fontStyle: '',
 				},
 			},
 			{
 				scope: ['support.other.escape.special.regexp'],
 				settings: {
-					foreground: o.colors.regex?.green || '#b2ff59',
+					foreground: o.colors.green || o.colors.check,
 					fontStyle: '',
 				},
 			},
@@ -1010,7 +1009,7 @@ export const template = (o: Options) => {
 					'keyword.control.anchor.regexp',
 				],
 				settings: {
-					foreground: o.colors.regex?.orange || '#ff6e40',
+					foreground: o.colors.other.orange || o.colors.check,
 					fontStyle: '',
 				},
 			},
@@ -1022,7 +1021,7 @@ export const template = (o: Options) => {
 					'meta.assertion.look-behind.regexp',
 				],
 				settings: {
-					foreground: o.colors.regex?.green || o.colors.green.a,
+					foreground: o.colors.green || o.colors.green,
 				},
 			},
 		],

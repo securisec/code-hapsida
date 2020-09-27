@@ -1,52 +1,39 @@
-export interface Options {
-	name: string;
+export interface Colors {
 	colors: {
 		background: string;
-		functions: string;
-		expression: string;
-		controlflow: string;
-		conditional: string;
-		strings: string;
-		types: string;
 		foreground: string;
-		arguments: string;
-		objectkeys: string;
-		classname: string;
-		exportbool: string;
-		selection: string;
-		variables: string;
-		python?: {
-			self?: string;
-			type?: string;
+		accent: string;
+		primary: string;
+		secondary: string;
+		red: string;
+		green: string;
+		blue: string;
+		yellow: string;
+		cyan: string;
+		purple: string;
+		light: {
+			red: string;
+			green: string;
+			blue: string;
+			yellow: string;
+			cyan: string;
+			purple: string;
 		};
-		regex?: {
-			blue?: string;
-			yellow?: string;
-			red?: string;
-			green?: string;
-			orange?: string;
+		dark: {
+			red: string;
+			green: string;
+			blue: string;
+			yellow: string;
+			cyan: string;
+			purple: string;
 		};
-		green: {
-			a: string;
+		other: {
+			orange: string;
 		};
-		red: {
-			a: string;
-		};
-		blue?: {
-			a?: string;
-			b?: string;
-		};
-		yellow?: {
-			a: string;
-		};
-		orange?: {
-			a: string;
-		};
-		purple?: {
-			a: string;
-		};
-		cyan?: {
-			a: string;
-		};
+		check: string;
 	};
+}
+
+export interface Options extends Colors {
+	name: string;
 }

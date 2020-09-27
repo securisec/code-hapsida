@@ -52,6 +52,11 @@
 				"label": "Hapsida Tailwind",
 				"uiTheme": "vs-dark",
 				"path": "./themes/Hapsida-Tailwind-theme.json"
+			},
+			{
+				"label": "Hapsida PGLight",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Hapsida-PGLight-theme.json"
 			}
 		]
 	},
