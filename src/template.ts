@@ -14,14 +14,14 @@ export const template = (o: Options) => {
 			'editorOverviewRuler.findMatchForeground': '#ff00f2',
 			// panel
 			'panel.background': o.colors.background,
-			'panel.border': '#0D3A58',
+			'panel.border': o.colors.primary,
 			'panelTitle.activeBorder': o.colors.strings,
-			'panelTitle.activeForeground': '#0D3A58',
-			'panelTitle.inactiveForeground': '#6d8996',
+			'panelTitle.activeForeground': o.colors.check,
+			'panelTitle.inactiveForeground': o.colors.primary,
 
 			'editor.findMatchBackground': o.colors.objectkeys,
-			'editor.findMatchBorder': '#0D3A58',
-			'editor.findMatchHighlightBackground': '#0f64e471',
+			'editor.findMatchBorder': o.colors.primary,
+			'editor.findMatchHighlightBackground': o.colors.primary + '71',
 			'editor.findMatchHighlightBorder': o.colors.selection,
 			'editor.selectionBackground': o.colors.selection,
 			// "editorBracketMatch.border": "#29e2e2",
@@ -35,11 +35,11 @@ export const template = (o: Options) => {
 			'input.foreground': o.colors.strings,
 			'input.placeholderForeground': '#aaa',
 			'inputOption.activeBorder': o.colors.classname,
-			'inputValidation.errorBackground': '#193549',
+			'inputValidation.errorBackground': o.colors.primary,
 			'inputValidation.errorBorder': '#0D3A58',
-			'inputValidation.infoBackground': '#193549',
+			'inputValidation.infoBackground': o.colors.primary,
 			'inputValidation.infoBorder': '#0D3A58',
-			'inputValidation.warningBackground': '#193549',
+			'inputValidation.warningBackground': o.colors.primary,
 			'inputValidation.warningBorder': '#ffc600',
 			'selection.background': '#b4004e',
 			// Git status colors in File Explorer
@@ -51,20 +51,20 @@ export const template = (o: Options) => {
 			'gitDecoration.conflictingResourceForeground': o.colors.controlflow,
 			// activityBar
 			// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L6-L12
-			'activityBar.border': '#0D3A58', //sidebar border
-			'activityBar.dropBackground': '#0d3a58',
-			'activityBar.foreground': '#fff',
-			'activityBarBadge.foreground': '#000',
-			'activityBarBadge.background': o.colors.strings,
-			'activityBar.inactiveForeground': '#6f7683',
+			'activityBar.border': o.colors.background, //sidebar border
+			'activityBar.dropBackground': o.colors.secondary,
+			'activityBar.foreground': o.colors.primary,
+			'activityBarBadge.foreground': o.colors.background,
+			'activityBarBadge.background': o.colors.primary,
+			'activityBar.inactiveForeground': o.colors.tertiary,
 			'activityBar.background': o.colors.background,
 			// badge
 			// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L13-L15
-			'badge.background': '#ffc600',
-			'badge.foreground': '#000',
+			'badge.background': o.colors.warning,
+			'badge.foreground': o.colors.background,
 			// button
-			'button.background': '#0088ff',
-			'button.foreground': '#fff',
+			'button.background': o.colors.primary,
+			'button.foreground': o.colors.background,
 			'button.hoverBackground': '#ff9d00',
 			// contrast
 			// "contrastActiveBorder": null,
@@ -82,13 +82,13 @@ export const template = (o: Options) => {
 			'diffEditor.removedTextBorder': '#ee3a4355',
 			// dropdown
 			'dropdown.background': '#193549', // output window
-			'dropdown.border': '#15232d',
+			'dropdown.border': o.colors.primary,
 			'dropdown.foreground': '#fff',
 			// "editor.hoverHighlightBackground": "#ffc60033",
 			'editor.inactiveSelectionBackground': '#193549',
 			// current line styles
 			'editor.lineHighlightBackground': '#000000',
-			'editor.lineHighlightBorder': '#0D3A58',
+			'editor.lineHighlightBorder': o.colors.primary + '80',
 			//    "editor.rangeHighlightBackground": "#1F4662",
 			// and this one is the rest of them
 			'editor.wordHighlightBackground': '#7ce1ee33',
@@ -100,9 +100,9 @@ export const template = (o: Options) => {
 			// "editorError.foreground": "#A22929",
 			// gutter
 			'editorGutter.background': o.colors.background,
-			'editorGutter.addedBackground': '#99ffee8a',
-			'editorGutter.deletedBackground': o.colors.red.a,
-			'editorGutter.modifiedBackground': '#568beed2',
+			'editorGutter.addedBackground': o.colors.success + '8a',
+			'editorGutter.deletedBackground': o.colors.error + '8a',
+			'editorGutter.modifiedBackground': o.colors.warning + '8a',
 			// editorGroup
 			// "editorGroup.background": "#A22929",
 			'editorGroup.border': '#122738',
@@ -135,7 +135,7 @@ export const template = (o: Options) => {
 			'editorWhitespace.foreground': '#ffffff1a',
 			'editorWidget.background': '#15232d',
 			'editorWidget.border': '#0d3a58',
-			errorForeground: '#A22929',
+			errorForeground: o.colors.error,
 			// error squiggles
 			'editorError.foreground': '#ff0000',
 			'editorError.border': o.colors.red.a,
@@ -186,19 +186,19 @@ export const template = (o: Options) => {
 			'progressBar.background': '#ffc600',
 			// scrollbar
 			'scrollbar.shadow': '#00000000',
-			'scrollbarSlider.activeBackground': '#ff1313cc',
+			'scrollbarSlider.activeBackground': o.colors.check,
 			'scrollbarSlider.background': '#8ef8cc7a', //"#1F466280", //scrollbar block
 			'scrollbarSlider.hoverBackground': '#406179cc',
 			// sidebar
 			// "activityBar.inactiveForeground": "#ff0000",
-			'sideBar.border': '#0d3a58', //sidebar border
+			'sideBar.border': o.colors.primary, //sidebar border
 			'sideBar.foreground': '#aaa',
-			'sideBarSectionHeader.foreground': '#aaaaaa',
 			'sideBarTitle.foreground': '#bbbbbb',
 			'sideBar.background': o.colors.background,
 			'sideBar.dropBackground': o.colors.classname,
-			'sideBarSectionHeader.border': '#0D3A58',
-			'sideBarSectionHeader.background': '#010135',
+			'sideBarSectionHeader.border': o.colors.background,
+			'sideBarSectionHeader.background': o.colors.primary,
+			"sideBarSectionHeader.foreground": o.colors.background,
 			// statusBar
 			'statusBar.background': '#15232d',
 			'statusBar.border': '#fff0a6',
@@ -212,11 +212,11 @@ export const template = (o: Options) => {
 			'statusBarItem.prominentBackground': '#15232d',
 			'statusBarItem.prominentHoverBackground': '#0d3a58',
 			// tab
-			'tab.activeBackground': o.colors.background,
-			'tab.activeForeground': o.colors.classname,
+			'tab.activeBackground': o.colors.primary,
+			'tab.activeForeground': o.colors.background,
 			'tab.border': o.colors.background,
-			'tab.activeBorder': o.colors.classname,
-			'tab.inactiveBackground': '#193549',
+			'tab.activeBorder': o.colors.primary,
+			'tab.inactiveBackground': o.colors.background + 'aa',
 			'tab.inactiveForeground': '#aaa',
 			'tab.unfocusedActiveForeground': '#aaa',
 			'tab.unfocusedInactiveForeground': '#aaa',

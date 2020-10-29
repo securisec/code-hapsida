@@ -1,7 +1,14 @@
 export interface Options {
 	name: string;
 	colors: {
+		check?: string;
 		background: string;
+		primary: string;
+		secondary: string;
+		tertiary: string;
+		warning: string;
+		error: string;
+		success: string;
 		functions: string;
 		expression: string;
 		controlflow: string;
