@@ -12,11 +12,11 @@ export const template = (o: Options) => {
 			'quickInput.foreground': '#eeffff',
 
 			'editorOverviewRuler.findMatchForeground': '#ff00f2',
-			// panel
+			// panel (output)
 			'panel.background': o.colors.background,
 			'panel.border': o.colors.primary,
-			'panelTitle.activeBorder': o.colors.strings,
-			'panelTitle.activeForeground': o.colors.check,
+			'panelTitle.activeBorder': o.colors.primary,
+			'panelTitle.activeForeground': o.colors.secondary,
 			'panelTitle.inactiveForeground': o.colors.primary,
 
 			'editor.findMatchBackground': o.colors.objectkeys,
@@ -222,10 +222,10 @@ export const template = (o: Options) => {
 			'tab.unfocusedInactiveForeground': '#aaa',
 			// --- workbench: terminal
 			'terminal.ansiBlack': '#000000',
-			'terminal.ansiRed': '#ff628c',
-			'terminal.ansiGreen': '#3ad900',
-			'terminal.ansiYellow': '#ffc600',
-			'terminal.ansiBlue': '#0088ff',
+			'terminal.ansiRed': o.colors.error,
+			'terminal.ansiGreen': o.colors.success,
+			'terminal.ansiYellow': o.colors.warning,
+			'terminal.ansiBlue': o.colors.info,
 			'terminal.ansiMagenta': '#fb94ff',
 			'terminal.ansiCyan': '#80fcff',
 			'terminal.ansiWhite': '#ffffff',

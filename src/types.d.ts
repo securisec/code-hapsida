@@ -7,6 +7,7 @@ export interface Options {
 		secondary: string;
 		tertiary: string;
 		warning: string;
+		info: string;
 		error: string;
 		success: string;
 		functions: string;
