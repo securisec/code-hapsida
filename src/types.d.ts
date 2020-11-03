@@ -15,6 +15,7 @@ export interface Options {
 		controlflow: string;
 		conditional: string;
 		strings: string;
+		sidebar?: string;
 		types: string;
 		foreground: string;
 		arguments: string;
@@ -22,6 +23,7 @@ export interface Options {
 		classname: string;
 		exportbool: string;
 		selection: string;
+		number: string;
 		variables: string;
 		python?: {
 			self?: string;

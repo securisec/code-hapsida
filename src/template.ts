@@ -9,15 +9,15 @@ export const template = (o: Options) => {
 			// "editor.background": "#0x20b19",
 			'editor.foreground': o.colors.foreground,
 			'quickInput.background': o.colors.background,
-			'quickInput.foreground': '#eeffff',
+			'quickInput.foreground': o.colors.foreground,
 
 			'editorOverviewRuler.findMatchForeground': '#ff00f2',
 			// panel (output)
 			'panel.background': o.colors.background,
 			'panel.border': o.colors.primary,
 			'panelTitle.activeBorder': o.colors.primary,
-			'panelTitle.activeForeground': o.colors.secondary,
-			'panelTitle.inactiveForeground': o.colors.primary,
+			'panelTitle.activeForeground': o.colors.primary,
+			'panelTitle.inactiveForeground': o.colors.foreground,
 
 			'editor.findMatchBackground': o.colors.objectkeys,
 			'editor.findMatchBorder': o.colors.primary,
@@ -40,7 +40,7 @@ export const template = (o: Options) => {
 			'inputValidation.infoBackground': o.colors.primary,
 			'inputValidation.infoBorder': '#0D3A58',
 			'inputValidation.warningBackground': o.colors.primary,
-			'inputValidation.warningBorder': '#ffc600',
+			'inputValidation.warningBorder': o.colors.warning,
 			'selection.background': '#b4004e',
 			// Git status colors in File Explorer
 			// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L248-L253
@@ -51,7 +51,7 @@ export const template = (o: Options) => {
 			'gitDecoration.conflictingResourceForeground': o.colors.controlflow,
 			// activityBar
 			// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L6-L12
-			'activityBar.border': o.colors.background, //sidebar border
+			'activityBar.border': o.colors.sidebar ? o.colors.sidebar : o.colors.background, //sidebar border
 			'activityBar.dropBackground': o.colors.secondary,
 			'activityBar.foreground': o.colors.primary,
 			'activityBarBadge.foreground': o.colors.background,
@@ -65,7 +65,7 @@ export const template = (o: Options) => {
 			// button
 			'button.background': o.colors.primary,
 			'button.foreground': o.colors.background,
-			'button.hoverBackground': '#ff9d00',
+			'button.hoverBackground': o.colors.tertiary,
 			// contrast
 			// "contrastActiveBorder": null,
 			contrastBorder: '#ffffff00',
@@ -87,7 +87,7 @@ export const template = (o: Options) => {
 			// "editor.hoverHighlightBackground": "#ffc60033",
 			'editor.inactiveSelectionBackground': '#193549',
 			// current line styles
-			'editor.lineHighlightBackground': '#000000',
+			'editor.lineHighlightBackground': o.colors.background,
 			'editor.lineHighlightBorder': o.colors.primary + '80',
 			//    "editor.rangeHighlightBackground": "#1F4662",
 			// and this one is the rest of them
@@ -95,7 +95,7 @@ export const template = (o: Options) => {
 			'editorBracketMatch.background': '#0d3a58',
 			'editorBracketMatch.border': '#ffc60080',
 			'editorCodeLens.foreground': '#aaa',
-			'editorCursor.foreground': '#ffc600',
+			'editorCursor.foreground': o.colors.primary,
 			// "editorError.border": "#0d3a58",
 			// "editorError.foreground": "#A22929",
 			// gutter
@@ -112,12 +112,12 @@ export const template = (o: Options) => {
 			'editorHoverWidget.border': '#0d3a58',
 			'editorIndentGuide.background': '#3B5364',
 			'editorLineNumber.foreground': '#aaa',
-			'editorLineNumber.activeForeground': '#ffc600',
+			'editorLineNumber.activeForeground': o.colors.warning,
 			'editorLink.activeForeground': '#aaa',
 			// editorMarkerNavigation
 			'editorMarkerNavigation.background': '#3B536433',
-			'editorMarkerNavigationError.background': '#A22929',
-			'editorMarkerNavigationWarning.background': '#ffc600',
+			'editorMarkerNavigationError.background': o.colors.error,
+			'editorMarkerNavigationWarning.background': o.colors.warning,
 			// ruler
 			'editorOverviewRuler.border': '#0d3a58',
 			'editorOverviewRuler.commonContentForeground': '#ffc60055',
@@ -127,11 +127,11 @@ export const template = (o: Options) => {
 			'editorSuggestWidget.background': '#01132e', //"#15232d", //autocomplete intellisense backgroun
 			'editorSuggestWidget.border': '#15232d',
 			'editorSuggestWidget.foreground': '#aaa',
-			'editorSuggestWidget.highlightForeground': '#ffc600',
+			'editorSuggestWidget.highlightForeground': o.colors.warning,
 			'editorSuggestWidget.selectedBackground': '#193549',
 			// editorWarning
 			'editorWarning.border': '#ffffff00',
-			'editorWarning.foreground': '#ffc600',
+			'editorWarning.foreground': o.colors.warning,
 			'editorWhitespace.foreground': '#ffffff1a',
 			'editorWidget.background': '#15232d',
 			'editorWidget.border': '#0d3a58',
@@ -178,12 +178,12 @@ export const template = (o: Options) => {
 			'peekViewResult.selectionForeground': '#fff',
 			'peekViewTitle.background': '#15232d',
 			'peekViewTitleDescription.foreground': '#aaa',
-			'peekViewTitleLabel.foreground': '#ffc600',
+			'peekViewTitleLabel.foreground': o.colors.warning,
 			// picker
 			'pickerGroup.foreground': o.colors.functions,
 			'pickerGroup.border': '#ffe033',
 			// progressBar
-			'progressBar.background': '#ffc600',
+			'progressBar.background': o.colors.warning,
 			// scrollbar
 			'scrollbar.shadow': '#00000000',
 			'scrollbarSlider.activeBackground': o.colors.check,
@@ -192,17 +192,17 @@ export const template = (o: Options) => {
 			// sidebar
 			// "activityBar.inactiveForeground": "#ff0000",
 			'sideBar.border': o.colors.primary, //sidebar border
-			'sideBar.foreground': '#aaa',
-			'sideBarTitle.foreground': '#bbbbbb',
+			'sideBar.foreground': o.colors.foreground,
+			'sideBarTitle.foreground': o.colors.foreground,
 			'sideBar.background': o.colors.background,
 			'sideBar.dropBackground': o.colors.classname,
-			'sideBarSectionHeader.border': o.colors.background,
+			'sideBarSectionHeader.border': o.colors.sidebar ? o.colors.sidebar : o.colors.background,
 			'sideBarSectionHeader.background': o.colors.primary,
 			"sideBarSectionHeader.foreground": o.colors.background,
 			// statusBar
-			'statusBar.background': '#15232d',
+			'statusBar.background': o.colors.background,
 			'statusBar.border': '#fff0a6',
-			'statusBar.debuggingBackground': '#ffc600',
+			'statusBar.debuggingBackground': o.colors.warning,
 			'statusBar.debuggingForeground': '#15232d',
 			'statusBar.foreground': '#aaa',
 			'statusBar.noFolderBackground': '#15232d',
@@ -217,9 +217,9 @@ export const template = (o: Options) => {
 			'tab.border': o.colors.background,
 			'tab.activeBorder': o.colors.primary,
 			'tab.inactiveBackground': o.colors.background + 'aa',
-			'tab.inactiveForeground': '#aaa',
-			'tab.unfocusedActiveForeground': '#aaa',
-			'tab.unfocusedInactiveForeground': '#aaa',
+			'tab.inactiveForeground': o.colors.foreground,
+			'tab.unfocusedActiveForeground': o.colors.foreground,
+			'tab.unfocusedInactiveForeground': o.colors.foreground,
 			// --- workbench: terminal
 			'terminal.ansiBlack': '#000000',
 			'terminal.ansiRed': o.colors.error,
@@ -232,15 +232,15 @@ export const template = (o: Options) => {
 			'terminal.ansiBrightBlack': '#0050A4',
 			'terminal.ansiBrightRed': '#ff628c',
 			'terminal.ansiBrightGreen': '#3ad900',
-			'terminal.ansiBrightYellow': '#ffc600',
+			'terminal.ansiBrightYellow': o.colors.warning,
 			'terminal.ansiBrightBlue': '#0088ff',
 			'terminal.ansiBrightMagenta': '#fb94ff',
 			'terminal.ansiBrightCyan': '#80fcff',
 			'terminal.ansiBrightWhite': '#193549',
 			'terminal.background': '#000000',
 			'terminal.foreground': '#ffffff',
-			'terminalCursor.background': '#ffc600',
-			'terminalCursor.foreground': '#ffc600',
+			'terminalCursor.background': o.colors.warning,
+			'terminalCursor.foreground': o.colors.warning,
 			'terminal.selectionBackground': '#006164a4',
 			// textBlockQuote
 			'textBlockQuote.background': '#193549',
@@ -248,7 +248,7 @@ export const template = (o: Options) => {
 			'textCodeBlock.background': '#193549',
 			'textLink.activeForeground': '#0088ff',
 			'textLink.foreground': '#0088ff',
-			'textPreformat.foreground': '#ffc600',
+			'textPreformat.foreground': o.colors.warning,
 			'textSeparator.foreground': '#0d3a58',
 			'titleBar.activeBackground': '#15232D',
 			'titleBar.activeForeground': '#ffffff',
@@ -392,7 +392,7 @@ export const template = (o: Options) => {
 					'keyword.other.substitution',
 				],
 				settings: {
-					foreground: o.colors.controlflow,
+					foreground: o.colors.warning,
 					fontStyle: 'italic',
 				},
 			},
@@ -446,7 +446,7 @@ export const template = (o: Options) => {
 					'keyword.other',
 				],
 				settings: {
-					foreground: o.colors.foreground,
+					foreground: o.colors.number,
 				},
 			},
 			{
@@ -505,7 +505,7 @@ export const template = (o: Options) => {
 					'source.postcss support.type.property-name',
 				],
 				settings: {
-					foreground: '#B2CCD6',
+					foreground: o.colors.strings,
 				},
 			},
 			{
@@ -546,13 +546,25 @@ export const template = (o: Options) => {
 				},
 			},
 			{
+				name: 'HTML tag',
+				scope: [
+					'meta.tag.block.any.html',
+					'source.vue',
+					'entity.name.tag.block.any.html'
+				],
+				settings: {
+					fontStyle: 'italic',
+					foreground: o.colors.cyan.a,
+				},
+			},
+			{
 				name: 'HTML Attributes',
 				scope: [
 					'entity.other.attribute-name',
 				],
 				settings: {
 					fontStyle: 'italic',
-					foreground: o.colors.blue.b,
+					foreground: o.colors.arguments,
 				},
 			},
 			{
@@ -635,19 +647,10 @@ export const template = (o: Options) => {
 			{
 				name: 'JSON Key - Level 0',
 				scope: [
-					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json',
-				],
-				settings: {
-					foreground: '#f48fb1',
-				},
-			},
-			{
-				name: 'JSON Key - Level 0',
-				scope: [
 					'source.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: o.colors.classname,
+					foreground: o.colors.controlflow,
 				},
 			},
 			{
@@ -665,7 +668,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: '#daf381',
+					foreground: o.colors.success,
 				},
 			},
 			{
@@ -674,7 +677,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: '#97efff',
+					foreground: o.colors.primary,
 				},
 			},
 			{
@@ -683,7 +686,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: '#C17E70',
+					foreground: o.colors.warning,
 				},
 			},
 			{
@@ -692,7 +695,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: '#74dff5',
+					foreground: o.colors.error,
 				},
 			},
 			{
@@ -719,7 +722,7 @@ export const template = (o: Options) => {
 					'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 				],
 				settings: {
-					foreground: '#C3E88D',
+					foreground: o.colors.success,
 				},
 			},
 			{
@@ -729,7 +732,7 @@ export const template = (o: Options) => {
 					'punctuation.definition.list_item.markdown',
 				],
 				settings: {
-					foreground: '#EEFFFF',
+					foreground: o.colors.foreground,
 				},
 			},
 			{
@@ -938,7 +941,7 @@ export const template = (o: Options) => {
 			{
 				scope: ['entity.name.tag.other.html'],
 				settings: {
-					foreground: '#ffccbc',
+					foreground: o.colors.warning,
 				},
 			},
 
