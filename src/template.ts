@@ -63,7 +63,7 @@ export const template = (o: Options) => {
 			'badge.background': o.colors.warning,
 			'badge.foreground': o.colors.background,
 			// button
-			'button.background': o.colors.primary,
+			'button.background': o.colors.tertiary,
 			'button.foreground': o.colors.background,
 			'button.hoverBackground': o.colors.tertiary,
 			// contrast
@@ -145,14 +145,14 @@ export const template = (o: Options) => {
 			'extensionButton.prominentHoverBackground': '#ff9d00',
 			focusBorder: '#0d3a58',
 			foreground: '#aaa',
-			'list.activeSelectionBackground': '#193549',
-			'list.activeSelectionForeground': '#fff',
+			'list.activeSelectionBackground': o.colors.primary + 'aa',
+			'list.activeSelectionForeground': o.colors.background,
 			'list.dropBackground': '#0d3a58',
-			'list.focusBackground': '#0d3a58',
-			'list.focusForeground': o.colors.strings, //command pallette active selection text
+			'list.focusBackground': o.colors.primary,
+			'list.focusForeground': o.colors.background, //command pallette active selection text
 			'list.highlightForeground': o.colors.controlflow,
-			'list.hoverBackground': '#193549',
-			'list.hoverForeground': '#aaa',
+			'list.hoverBackground': o.colors.primary,
+			'list.hoverForeground': o.colors.background,
 			'list.inactiveSelectionBackground': '#0d3a58',
 			'list.inactiveSelectionForeground': '#aaa',
 			// merge
