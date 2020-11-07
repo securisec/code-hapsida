@@ -106,14 +106,14 @@
     "extensionButton.prominentHoverBackground": "#ff9d00",
     "focusBorder": "#0d3a58",
     "foreground": "#aaa",
-    "list.activeSelectionBackground": "#D84713aa",
-    "list.activeSelectionForeground": "#f5f2f0",
+    "list.activeSelectionBackground": "#193549",
+    "list.activeSelectionForeground": "#fff",
     "list.dropBackground": "#0d3a58",
-    "list.focusBackground": "#D84713",
-    "list.focusForeground": "#f5f2f0",
+    "list.focusBackground": "#0d3a58",
+    "list.focusForeground": "#D84713",
     "list.highlightForeground": "#005473",
-    "list.hoverBackground": "#D84713",
-    "list.hoverForeground": "#f5f2f0",
+    "list.hoverBackground": "#193549",
+    "list.hoverForeground": "#aaa",
     "list.inactiveSelectionBackground": "#0d3a58",
     "list.inactiveSelectionForeground": "#aaa",
     "merge.border": "#ffffff00",
@@ -287,7 +287,7 @@
         "entity.name.tag.yaml"
       ],
       "settings": {
-        "foreground": "#005473",
+        "foreground": "#D84713",
         "fontStyle": "italic"
       }
     },

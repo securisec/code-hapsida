@@ -1,4 +1,4 @@
-import { Options } from "./types";
+import { Options } from "../types";
 
 export const template = (o: Options) => {
 	return {
@@ -44,10 +44,10 @@ export const template = (o: Options) => {
 			'selection.background': '#b4004e',
 			// Git status colors in File Explorer
 			// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L248-L253
-			'gitDecoration.modifiedResourceForeground': o.colors.strings,
-			'gitDecoration.deletedResourceForeground': o.colors.controlflow,
-			'gitDecoration.untrackedResourceForeground': o.colors.classname,
-			'gitDecoration.ignoredResourceForeground': o.colors.controlflow,
+			'gitDecoration.modifiedResourceForeground': o.colors.info,
+			'gitDecoration.deletedResourceForeground': o.colors.error,
+			'gitDecoration.untrackedResourceForeground': o.colors.warning,
+			'gitDecoration.ignoredResourceForeground': o.colors.error,
 			'gitDecoration.conflictingResourceForeground': o.colors.controlflow,
 			// activityBar
 			// https://github.com/wesbos/cobalt2-vscode/blob/master/theme/cobalt2.json#L6-L12
@@ -63,7 +63,7 @@ export const template = (o: Options) => {
 			'badge.background': o.colors.warning,
 			'badge.foreground': o.colors.background,
 			// button
-			'button.background': o.colors.tertiary,
+			'button.background': o.colors.primary,
 			'button.foreground': o.colors.background,
 			'button.hoverBackground': o.colors.tertiary,
 			// contrast
@@ -145,14 +145,14 @@ export const template = (o: Options) => {
 			'extensionButton.prominentHoverBackground': '#ff9d00',
 			focusBorder: '#0d3a58',
 			foreground: '#aaa',
-			'list.activeSelectionBackground': o.colors.primary + 'aa',
-			'list.activeSelectionForeground': o.colors.background,
+			'list.activeSelectionBackground': '#193549',
+			'list.activeSelectionForeground': '#fff',
 			'list.dropBackground': '#0d3a58',
-			'list.focusBackground': o.colors.primary,
-			'list.focusForeground': o.colors.background, //command pallette active selection text
+			'list.focusBackground': '#0d3a58',
+			'list.focusForeground': o.colors.strings, //command pallette active selection text
 			'list.highlightForeground': o.colors.controlflow,
-			'list.hoverBackground': o.colors.primary,
-			'list.hoverForeground': o.colors.background,
+			'list.hoverBackground': '#193549',
+			'list.hoverForeground': '#aaa',
 			'list.inactiveSelectionBackground': '#0d3a58',
 			'list.inactiveSelectionForeground': '#aaa',
 			// merge
@@ -321,7 +321,7 @@ export const template = (o: Options) => {
 			{
 				scope: ['entity.name.tag.yaml'],
 				settings: {
-					foreground: o.colors.functions,
+					foreground: o.colors.arguments,
 					fontStyle: 'italic',
 				},
 			},
