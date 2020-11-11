@@ -59,6 +59,11 @@
 				"path": "./themes/Hapsida-OrangeTeal-theme.json"
 			},
 			{
+				"label": "Hapsida Mountain",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Hapsida-Mountain-theme.json"
+			},
+			{
 				"label": "Hapsida Pastel",
 				"uiTheme": "vs-dark",
 				"path": "./themes/Hapsida-Pastel-theme.json"
