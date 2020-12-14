@@ -917,7 +917,7 @@ export const template = (o: Options) => {
 				scope: ['variable.language.special.self.python'],
 				settings: {
 					fontStyle: 'italic',
-					foreground: o.colors.python?.self || '#ffccbc',
+					foreground: o.colors.primary || '#ffccbc',
 				},
 			},
 			{
