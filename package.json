@@ -82,6 +82,11 @@
 				"label": "Hapsida Nord",
 				"uiTheme": "vs-dark",
 				"path": "./themes/Hapsida-Nord-theme.json"
+			},
+			{
+				"label": "Hapsida Mystic",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Hapsida-Mystic-theme.json"
 			}
 		]
 	},

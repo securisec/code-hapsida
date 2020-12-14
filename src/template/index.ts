@@ -546,11 +546,9 @@ export const template = (o: Options) => {
 				},
 			},
 			{
-				name: 'HTML tag',
+				name: 'Vue tag',
 				scope: [
-					'meta.tag.block.any.html',
-					'source.vue',
-					'entity.name.tag.block.any.html'
+					'support.class.component.html',
 				],
 				settings: {
 					fontStyle: 'italic',
@@ -637,7 +635,7 @@ export const template = (o: Options) => {
 			{
 				name: 'ES7 Bind Operator',
 				scope: [
-					'source.js constant.other.object.key.js string.unquoted.label.js',
+					'constant.other.object.key.js string.unquoted.label.js',
 				],
 				settings: {
 					fontStyle: 'italic',
