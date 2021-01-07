@@ -19,7 +19,7 @@ export const template = (o: Options) => {
 			'panelTitle.activeForeground': o.colors.primary,
 			'panelTitle.inactiveForeground': o.colors.foreground,
 
-			'editor.findMatchBackground': o.colors.objectkeys,
+			'editor.findMatchBackground': o.colors.primary+'7f',
 			'editor.findMatchBorder': o.colors.primary,
 			'editor.findMatchHighlightBackground': o.colors.primary + '71',
 			'editor.findMatchHighlightBorder': o.colors.selection,
