@@ -524,7 +524,7 @@ export const template = (o: Options) => {
 				scope: ['variable.language'],
 				settings: {
 					fontStyle: 'italic',
-					foreground: '#f8bbd0',
+					foreground: o.colors.number || '#f8bbd0',
 				},
 			},
 			{
