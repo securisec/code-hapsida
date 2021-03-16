@@ -2,7 +2,7 @@
 	"name": "hapsida-securisec",
 	"displayName": "hapsida.securisec",
 	"description": "",
-	"version": "0.0.18",
+	"version": "0.0.21",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
@@ -107,6 +107,16 @@
 				"label": "Hapsida Buscar",
 				"uiTheme": "vs-dark",
 				"path": "./themes/Hapsida-Buscar-theme.json"
+			},
+			{
+				"label": "Hapsida Urxvt",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Hapsida-Urxvt-theme.json"
+			},
+			{
+				"label": "Hapsida Iceberg",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Hapsida-Iceberg-theme.json"
 			}
 		]
 	},

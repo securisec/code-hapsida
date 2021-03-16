@@ -453,6 +453,7 @@ export const template = (o: Options) => {
 				name: 'String, Symbols, Inherited Class, Markup Heading',
 				scope: [
 					'string',
+					'entity.name.import.go',
 					'constant.other.symbol',
 					'constant.other.key',
 					'entity.other.inherited-class',
@@ -914,10 +915,10 @@ export const template = (o: Options) => {
 
 			{
 				name: 'Python self',
-				scope: ['variable.language.special.self.python'],
+				scope: ['variable.language.special.self.python', 'variable.language.this'],
 				settings: {
 					fontStyle: 'italic',
-					foreground: o.colors.primary || '#ffccbc',
+					foreground: o.colors.blue.b || '#ffccbc',
 				},
 			},
 			{
@@ -953,7 +954,7 @@ export const template = (o: Options) => {
 			{
 				scope: ['meta.function-call.generic'],
 				settings: {
-					foreground: '#fffde7',
+					foreground: o.colors.foreground,
 				},
 			},
 
