@@ -2,7 +2,7 @@
 	"name": "hapsida-securisec",
 	"displayName": "hapsida.securisec",
 	"description": "",
-	"version": "0.0.26",
+	"version": "0.0.29",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
@@ -117,6 +117,16 @@
 				"label": "Hapsida Spring",
 				"uiTheme": "vs-dark",
 				"path": "./themes/spring-color-theme.json"
+			},
+			{
+				"label": "Hapsida Amora",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Amora-color-theme.json"
+			},
+			{
+				"label": "Hapsida Argonaut",
+				"uiTheme": "vs-dark",
+				"path": "./themes/argonaut-color-theme.json"
 			}
 		]
 	},
