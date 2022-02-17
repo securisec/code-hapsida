@@ -1,136 +1,136 @@
 {
-	"name": "hapsida-securisec",
-	"displayName": "hapsida.securisec",
-	"description": "",
-	"version": "0.0.29",
-	"engines": {
-		"vscode": "^1.41.0"
-	},
-	"scripts": {
-		"build": "ts-node-script src/* && vsce package"
-	},
-	"repository": {
-		"url": "https://github.com/securisec/code-hapsida"
-	},
-	"publisher": "securisec",
-	"categories": [
-		"Themes"
-	],
-	"contributes": {
-		"themes": [
-			{
-				"label": "Hapsida Material",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-material-theme.json"
-			},
-			{
-				"label": "Hapsida Candy",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-candy-theme.json"
-			},
-			{
-				"label": "Hapsida Fancy",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-Fancy-theme.json"
-			},
-			{
-				"label": "Hapsida Gruvbox",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-Gruvbox-theme.json"
-			},
-			{
-				"label": "Hapsida Nightfly",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-Nightfly-theme.json"
-			},
-			{
-				"label": "Hapsida Dark",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-Dark-theme.json"
-			},
-			{
-				"label": "Hapsida Tailwind",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-Tailwind-theme.json"
-			},
-			{
-				"label": "Hapsida OrangeTeal",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-OrangeTeal-theme.json"
-			},
-			{
-				"label": "Hapsida Mountain",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-Mountain-theme.json"
-			},
-			{
-				"label": "Hapsida Pastel",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-Pastel-theme.json"
-			},
-			{
-				"label": "Hapsida PGDark",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-PGDark-theme.json"
-			},
-			{
-				"label": "Hapsida PGLight",
-				"uiTheme": "vs",
-				"path": "./themes/Hapsida-PGLight-theme.json"
-			},
-			{
-				"label": "Hapsida Nord",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-Nord-theme.json"
-			},
-			{
-				"label": "Hapsida Mystic",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-Mystic-theme.json"
-			},
-			{
-				"label": "Hapsida Mixto",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-Mixto-theme.json"
-			},
-			{
-				"label": "Hapsida Buscar",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-Buscar-theme.json"
-			},
-			{
-				"label": "Hapsida Iceberg",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-Iceberg-theme.json"
-			},
-			{
-				"label": "Hapsida PwnF",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Hapsida-PwnF-theme.json"
-			},
-			{
-				"label": "Hapsida Vintage",
-				"uiTheme": "vs-dark",
-				"path": "./themes/vintage-color-theme.json"
-			},
-			{
-				"label": "Hapsida Spring",
-				"uiTheme": "vs-dark",
-				"path": "./themes/spring-color-theme.json"
-			},
-			{
-				"label": "Hapsida Amora",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Amora-color-theme.json"
-			},
-			{
-				"label": "Hapsida Argonaut",
-				"uiTheme": "vs-dark",
-				"path": "./themes/argonaut-color-theme.json"
-			}
-		]
-	},
-	"devDependencies": {
-		"@types/node": "^13.13.4"
-	}
+  "name": "hapsida-securisec",
+  "displayName": "hapsida.securisec",
+  "description": "",
+  "version": "0.0.30",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "scripts": {
+    "build": "ts-node-script src/* && vsce package"
+  },
+  "repository": {
+    "url": "https://github.com/securisec/code-hapsida"
+  },
+  "publisher": "securisec",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Hapsida Material",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-material-theme.json"
+      },
+      {
+        "label": "Hapsida Candy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-candy-theme.json"
+      },
+      {
+        "label": "Hapsida Fancy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Fancy-theme.json"
+      },
+      {
+        "label": "Hapsida Gruvbox",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Gruvbox-theme.json"
+      },
+      {
+        "label": "Hapsida Nightfly",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Nightfly-theme.json"
+      },
+      {
+        "label": "Hapsida Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Dark-theme.json"
+      },
+      {
+        "label": "Hapsida Tailwind",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Tailwind-theme.json"
+      },
+      {
+        "label": "Hapsida OrangeTeal",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-OrangeTeal-theme.json"
+      },
+      {
+        "label": "Hapsida Mountain",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Mountain-theme.json"
+      },
+      {
+        "label": "Hapsida Pastel",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Pastel-theme.json"
+      },
+      {
+        "label": "Hapsida PGLight",
+        "uiTheme": "vs",
+        "path": "./themes/Hapsida-PGLight-theme.json"
+      },
+      {
+        "label": "Hapsida Nord",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Nord-theme.json"
+      },
+      {
+        "label": "Hapsida Mystic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Mystic-theme.json"
+      },
+      {
+        "label": "Hapsida Mixto",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Mixto-theme.json"
+      },
+      {
+        "label": "Hapsida Buscar",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Buscar-theme.json"
+      },
+      {
+        "label": "Hapsida Iceberg",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Iceberg-theme.json"
+      },
+      {
+        "label": "Hapsida Tokyo Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Tokyo-theme.json"
+      },
+      {
+        "label": "Hapsida Vintage",
+        "uiTheme": "vs-dark",
+        "path": "./themes/vintage-color-theme.json"
+      },
+      {
+        "label": "Hapsida Spring",
+        "uiTheme": "vs-dark",
+        "path": "./themes/spring-color-theme.json"
+      },
+      {
+        "label": "Hapsida Amora",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Amora-color-theme.json"
+      },
+      {
+        "label": "Hapsida Argonaut",
+        "uiTheme": "vs-dark",
+        "path": "./themes/argonaut-color-theme.json"
+      },
+      {
+        "label": "Hapsida Openbase",
+        "uiTheme": "vs-dark",
+        "path": "./themes/openbase-color-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.4"
+  }
 }
