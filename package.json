@@ -54,11 +54,6 @@
         "path": "./themes/Hapsida-Tailwind-theme.json"
       },
       {
-        "label": "Hapsida OrangeTeal",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Hapsida-OrangeTeal-theme.json"
-      },
-      {
         "label": "Hapsida Mountain",
         "uiTheme": "vs-dark",
         "path": "./themes/Hapsida-Mountain-theme.json"
@@ -67,6 +62,16 @@
         "label": "Hapsida Pastel",
         "uiTheme": "vs-dark",
         "path": "./themes/Hapsida-Pastel-theme.json"
+      },
+      {
+        "label": "Hapsida Pastel2",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Pastel2-theme.json"
+      },
+      {
+        "label": "Hapsida Hiberbee",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Hiberbee-theme.json"
       },
       {
         "label": "Hapsida PGLight",
@@ -127,6 +132,21 @@
         "label": "Hapsida Openbase",
         "uiTheme": "vs-dark",
         "path": "./themes/openbase-color-theme.json"
+      },
+      {
+        "label": "Hapsida Kanagawa",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Kanagawa.json"
+      },
+      {
+        "label": "Hapsida Material 3",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Material3.json"
+      },
+      {
+        "label": "Hapsida Fleet",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Hapsida-Fleet.json"
       }
     ]
   },
